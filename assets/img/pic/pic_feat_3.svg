@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72.49" height="69.362" viewBox="0 0 72.49 69.362">
+  <g id="Icon_2_star" data-name="Icon 2/star" transform="translate(0.729 0.7)">
+    <path id="Star" d="M40.606,58.458a1.8,1.8,0,0,0-2.1,0l-18.725,13.5a1.8,1.8,0,0,1-2.768-2.006L24.024,47.9a1.8,1.8,0,0,0-.647-1.995L4.774,32.192a1.8,1.8,0,0,1,1.058-3.249L28.9,28.82a1.8,1.8,0,0,0,1.7-1.236L37.844,5.623a1.8,1.8,0,0,1,3.419,0L48.5,27.584a1.8,1.8,0,0,0,1.7,1.236l23.071.122a1.8,1.8,0,0,1,1.058,3.249L55.731,45.9a1.8,1.8,0,0,0-.647,1.995L62.1,69.948a1.8,1.8,0,0,1-2.768,2.006Z" transform="translate(-4.038 -4.387)" fill="none" stroke="#2b2a29" stroke-width="1.4" fill-rule="evenodd"/>
+    <g id="Path" transform="translate(25.166 38.802)">
+      <path id="Path_14" data-name="Path 14" d="M53.6,47.5h0Z" transform="translate(-32 -47.5)" fill="#fafafa"/>
+      <path id="Path_15" data-name="Path 15" d="M53.6,47.5H32" transform="translate(-32 -47.5)" fill="none" stroke="#fecf3d" stroke-width="1.4"/>
+    </g>
+    <g id="Path_2" transform="translate(30.191 43.302)">
+      <path id="Path_16" data-name="Path 16" d="M49.133,52.5h0Z" transform="translate(-37.583 -52.5)" fill="#fafafa"/>
+      <path id="Path_17" data-name="Path 17" d="M49.133,52.5H37.583" transform="translate(-37.583 -52.5)" fill="none" stroke="#2b2a29" stroke-width="1.4"/>
+    </g>
+    <path id="Oval_Copy_6" data-name="Oval Copy 6" d="M43.6,42.2A3.6,3.6,0,1,0,40,38.6,3.6,3.6,0,0,0,43.6,42.2Z" transform="translate(-7.634 -7.448)" fill="none" stroke="#fecf3d" stroke-width="1.4" fill-rule="evenodd"/>
+  </g>
+</svg>
