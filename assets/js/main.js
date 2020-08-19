@@ -2,11 +2,15 @@ jQuery(function () {
   if (jQuery('.btn-tab').length) {
     jQuery(".btn-tab").click(function () {
       var tabId = jQuery(this).data('tab');
+      
       jQuery(this).closest('.page-tabs').find(".btn-tab").removeClass('active');
       jQuery(this).closest('.page-tabs').find(".page-tab").removeClass('active');
       jQuery(".page-tab").removeClass('open');
       jQuery('#' + tabId).addClass('active');
       jQuery(this).addClass('active');
+      jQuery('.tab-group').removeClass('active');
+      jQuery('.tab-group[data-id='+tabId+']').addClass('active');
+      
     });
   } else {};
 });
@@ -108,13 +112,23 @@ $(function () {
       $('#summ-price-block').text(currentSumm);
       $('.custom-price-check .form-check-input').click(function(){
         if ($(this).is(':checked')) {
-          currentSumm = currentSumm + $(this).data('price');
+          currentSumm = currentSumm + parseInt($(this).val());
         } else {
-          currentSumm = currentSumm - $(this).data('price');
+          currentSumm = currentSumm - parseInt($(this).val());
         }
         $('#summ-price').attr('value',currentSumm);
         $('#summ-price-block').text(addCommas(currentSumm));
       });
   } else {};
+
+  if($('#submit-1').length){
+    $('#submit-1').on('click', function(){
+      if($('[data-tab="content-tab-1"]').hasClass('active')){
+        $('[name="sum2"]').val('-1');
+      }else{
+        $('[name="sum"]').val('-1');
+      }
+    });
+  }
 });
 

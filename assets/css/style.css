@@ -755,6 +755,8 @@ h1 {
 .promo-cont {
   background: #E5EEEF;
   background: url(../img/pic/pic_prom_bg.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  background-size: cover;
   padding: 84px 0 73px;
 }
 
@@ -1048,13 +1050,17 @@ h1 {
   position: relative;
 }
 
+.tab-group,
 .page-tab {
   display: none;
 }
 
+.tab-group.active,
 .page-tab.active {
   display: block;
 }
+
+
 
 .check-cont-foot {
   font-size: 16px;
@@ -1090,13 +1096,13 @@ h1 {
 
 .custom-summ-price:before {
   display: inline-block;  
-  content: '$';
+  content: '€';
   margin-right: 12px;
 }
 
 .custom-summ-price:after {
   display: inline-block;  
-  content: 'USD';
+  content: 'EUR';
   margin-left: 12px;
 }
 
@@ -1158,6 +1164,7 @@ h1 {
   max-width: 220px;
   -webkit-box-shadow: 0 25px 35px -20px #775A00;
           box-shadow: 0 25px 35px -20px #775A00;
+  text-decoration: none;
 }
 
 .btn.w-btn.sm-btn:hover {
@@ -1170,8 +1177,6 @@ h1 {
   max-width: 40%;
   padding-left: 10px;
 }
-
-
 
 main {
   overflow: hidden;
@@ -1288,28 +1293,9 @@ main {
   font-size: 42px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* /full-promo-cont */
 
-
-
 /* form styles */
-
 
 select.w-custom-select {
   -webkit-appearance: none; 
@@ -1863,7 +1849,7 @@ footer {
 }
 
 .custom-select-cont.custom-val:before {
-  content: '$';
+  content: '€';
   display: block;
   position: absolute;
   left: 0;
@@ -1878,7 +1864,7 @@ footer {
 }
 
 .custom-select-cont.custom-val:after {
-  content: 'USD';
+  content: 'EUR';
   display: block;
   position: absolute;
   right: 0;
@@ -1901,8 +1887,191 @@ footer {
   padding-bottom: 7px;
 }
 
+/* page price */
 
+main > section:first-child {
+  padding-top: 150px;
+}
 
+.page-price-section {
+  background: #E5EEEF;
+  padding: 150px 0 80px;
+}
+
+.page-price-section .back-link,
+.page-price-section .section-title {
+  margin-bottom: 20px;
+}
+
+.page-price-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.back-link:active,
+.back-link:hover,
+.back-link:visited,
+.back-link {
+  position: relative;
+  display: block;
+  padding-left: 38px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.back-link:before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  background: url(../img/pic/pic_arrow.png) no-repeat 0 0;
+  width: 25px;
+  height: 23px;
+  left: 2px;
+  top: 2px;
+  -webkit-transition: left .15s ease-out;
+  -o-transition: left .15s ease-out;
+  transition: left .15s ease-out;
+}
+
+.back-link:hover:before {
+  left: 0;
+}
+
+.price-load-link:active,
+.price-load-link:hover,
+.price-load-link:visited,
+.price-load-link {
+  position: relative;
+  display: block;
+  background: url(../img/pic/pic_arrow_l.png) no-repeat 2px 2px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 5px 5px 5px 200px;
+  -webkit-transition: background-position .15s ease-out;
+  -o-transition: background-position .15s ease-out;
+  transition: background-position .15s ease-out;
+  font-weight: 300;
+}
+
+.price-load-link:hover {
+  background-position: 0 2px;
+}
+
+.price-load-link:before {
+  display: inline-block;
+  content: '';
+  position: relative;
+  background: url(../img/icon/icon_w.png) no-repeat center 4px;
+  width: 12px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.form-footer-row.form-footer-column {
+  display: block;
+}
+
+.form-footer-row.form-footer-column .custom-check-cont {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-footer-row.form-footer-column .custom-btn-cont {
+  max-width: 100%;
+  padding: 0;
+}
+
+.form-footer-column .btn.w-btn.sm-btn:active, 
+.form-footer-column .btn.w-btn.sm-btn:hover, 
+.form-footer-column .btn.w-btn.sm-btn:visited, 
+.form-footer-column .btn.w-btn.sm-btn {
+  max-width: 100%;
+}
+
+.page-price-block {
+  background: #fff;
+  padding: 30px 30px 30px 50px;
+  overflow: auto;
+}
+
+.table-alert {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.price-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.price-table td {
+  font-size: 16px;
+  padding: 1px 5px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-table td:nth-child(1) {
+  width: 300px;
+}
+
+.price-table td:nth-child(2),
+.price-table td:nth-child(3),
+.price-table td:nth-child(4) {
+  width: 100px;
+}
+
+.table-h {
+  background: #D9D9D9;
+  font-weight: bold;
+  border: 1px solid #222;
+}
+
+.price-table.no-border td:not(.table-h) {
+  border: none;
+}
+
+.price-table td:not(.table-h) {
+  border: 1px solid #222;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.under {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.under.under-to-write {
+  min-width: 150px;
+  border-bottom: 1px solid #222;
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.empty-td {
+  height: 250px;
+}
+
+.center-tr td {
+  text-align: center;
+}
+
+.table-foot > *,
+.table-foot {
+  font-size: 14px;
+}
+
+.table-foot-block {
+  margin-bottom: 15px;
+}
+
+/* /page price */
 
 @media (min-width: 1240px) {
   .container,
@@ -1959,6 +2128,9 @@ footer {
 }
 
 @media screen and (max-width:1200px) {
+  main > section:first-child {
+    padding-top: 100px;
+  }
   .feat-cont::after {
     left: 50%;
   }
@@ -2055,6 +2227,37 @@ footer {
 }
 
 @media screen and (max-width:991px) {
+  .back-link:active, 
+  .back-link:hover, 
+  .back-link:visited, 
+  .back-link,
+  .page-price-section .back-link {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .page-price-section .section-title,
+  .page-price-section .section-title h2 {
+    margin-bottom: 0;
+  }
+  .page-price-title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .page-price-block {
+    margin-bottom: 30px;
+  }
+  .form-foot {
+    margin-bottom: 15px;
+  }
+  .price-load-link:active, .price-load-link:hover, .price-load-link:visited, .price-load-link {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
   .topline {
     padding: 19px 0;
     -webkit-transition: padding-top .15s ease-out, padding-bottom .15s ease-out;
@@ -2102,6 +2305,15 @@ footer {
 }
 
 @media screen and (max-width:767px) {
+  .form-foot {
+    padding-top: 20px;
+  }
+  .page-price-block {
+    overflow: auto;
+  }
+  .page-price-block > * {
+    width: 650px;
+  }
   .custom-select-cont.custom-val {
     font-size: 27px;
   }
@@ -2396,6 +2608,16 @@ footer {
 }
 
 @media screen and (max-width:576px) {
+  .page-price-title {
+    font-size: 20px;
+  }
+  .price-load-link:active, 
+  .price-load-link:hover, 
+  .price-load-link:visited, 
+  .price-load-link {
+    font-size: 16px;
+    padding: 0;
+  }
   .main-head {
     min-height: 0;
     padding: 115px 0px 35px;
