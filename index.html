@@ -33,7 +33,7 @@
                 <button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="button" title="Ваш город" aria-expanded="false">
                   <div class="filter-option">
                     <div class="filter-option-inner">
-                      <div class="filter-option-inner-inner">
+                      <div class="filter-option-inner-inner" id="slang">
                         <span class="lng-icon">
                           <img src="assets/img/icon/icon_lng_eng.svg" alt="">
                         </span>English</div>
@@ -42,10 +42,10 @@
                 </button>
                 <div class="dropdown-menu" role="combobox">
                   <div class="inner show" role="listbox" aria-expanded="true" tabindex="-1">
-                    <div class="lng-text">Choose language</div>
+                    <div data-tkey="cl" class="lng-text">Choose language</div>
                     <ul class="dropdown-menu inner">
                       <li>
-                        <a href="/" class="dropdown-item" aria-selected="false">
+                        <a href="/" class="dropdown-item" onclick=" html5Translate(dict, 'en'); return false;" aria-selected="false">
                           <span class="lng-icon">
                             <img src="assets/img/icon/icon_lng_eng.svg" alt="">
                           </span>
@@ -53,7 +53,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="/" class="dropdown-item" aria-selected="false">
+                        <a href="/" class="dropdown-item" onclick=" html5Translate(dict, 'ru'); return false;" aria-selected="false">
                           <span class="lng-icon">
                             <img src="assets/img/icon/icon_lng_ru.svg" alt="">
                           </span>
@@ -61,7 +61,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="/" class="dropdown-item" aria-selected="false">
+                        <a href="/" class="dropdown-item" onclick=" html5Translate(dict, 'es'); return false;" aria-selected="false">
                           <span class="lng-icon">
                             <img src="assets/img/icon/icon_lng_est.svg" alt="">
                           </span>
@@ -78,22 +78,22 @@
               <div class="navbar-collapse no-gutters">
                 <ul class="navbar-nav mr-auto main-nav">
                   <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" data-tkey="x0" class="nav-link">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#marketing" class="nav-link">Marketing</a>
+                    <a href="#marketing" data-tkey="x1" class="nav-link">Marketing</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#promotion" class="nav-link">Promotion</a>
+                    <a href="#promotion" data-tkey="x2" class="nav-link">Promotion</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#services" data-tkey="x3" class="nav-link">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#price" class="nav-link">Price</a>
+                    <a href="#price" data-tkey="x4" class="nav-link">Price</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact us</a>
+                    <a href="#contact" data-tkey="x5" class="nav-link">Contact us</a>
                   </li>
                 </ul>
               </div>
@@ -106,57 +106,54 @@
   <main>
     <section class="main-head" id="home">
       <div class="container">
-        <h1>WE HELP CREATE A SITE,<br>
-INCREASE A CONVERSION,<br>
-PROMOTE A BRAND</h1>
-        <p>Website development and optimization, promotion of an Internet brand,<br>
-maintaining an image company in social networks - all this is an integral part of modern business.</p>
+        <h1 data-tkey="x6"></h1>
+        <p data-tkey="x7"></p>
       </div>
     </section>
     <section class="feat-cont" id="marketing">
       <div class="container">
         <div class="section-title">
           <h2>
-            <span class="h-under">MODERN </span>
-            <span class="h-under">MARKETING </span>
-            <span class="h-under">STUDIO </span>
+            <span data-tkey="x8" class="h-under">MODERN </span>
+            <span data-tkey="x9" class="h-under">MARKETING </span>
+            <span data-tkey="x10" class="h-under">STUDIO </span>
           </h2>
-          <div class="h-desc">“XCHANGECAPITALGROUP OÜ” WILL HELP:</div>
+          <div data-tkey="x11" class="h-desc">“XCHANGECAPITALGROUP OÜ” WILL HELP:</div>
         </div>
         <div class="feat-list">
           <div class="feat-li">
             <div class="feat-img">
               <img src="assets/img/pic/pic_feat_1.svg" alt="Enlarge traffic of users">
             </div>
-            <div class="feat-text">Enlarge traffic <br>
+            <div data-tkey="x12" class="feat-text">Enlarge traffic <br>
 of users</div>
           </div>
           <div class="feat-li">
             <div class="feat-img">
               <img src="assets/img/pic/pic_feat_2.svg" alt="Get Experience Company with 11 years of experience">
             </div>
-            <div class="feat-text">Get Experience Company <br>
+            <div data-tkey="x14" class="feat-text">Get Experience Company <br>
 with 11 years of experience</div>
           </div>
           <div class="feat-li feat-li-mb">
             <div class="feat-img">
               <img src="assets/img/pic/pic_feat_3.svg" alt="Amplify recognizability your product">
             </div>
-            <div class="feat-text">Amplify recognizability <br>
+            <div data-tkey="x13" class="feat-text">Amplify recognizability <br>
 your product</div>
           </div>
           <div class="feat-li">
             <div class="feat-img">
               <img src="assets/img/pic/pic_feat_4.svg" alt="Create flexible and effective">
             </div>
-            <div class="feat-text">Create flexible and effective <br>
+            <div data-tkey="x15" class="feat-text">Create flexible and effective <br>
 funnel of sales</div>
           </div>
           <div class="feat-li">
             <div class="feat-img">
               <img src="assets/img/pic/pic_feat_5.svg" alt="Promote quantity active customers">
             </div>
-            <div class="feat-text">Promote quantity active customers</div>
+            <div data-tkey="x16" class="feat-text">Promote quantity active customers</div>
           </div>
         </div>
       </div>
@@ -165,37 +162,28 @@ funnel of sales</div>
       <div class="container">
         <div class="section-title title-center">
           <h2>
-            <span class="h-under">INTERNET </span>
-            <span class="h-under">PROMOTION</span>
+            <span data-tkey="x17" class="h-under">INTERNET </span>
+            <span data-tkey="x18" class="h-under">PROMOTION</span>
           </h2>
-          <div class="h-desc h-desc-sm">Promotion on the Internet – a guarantee of a successful business.</div>
+          <div data-tkey="x19" class="h-desc h-desc-sm">Promotion on the Internet – a guarantee of a successful business.</div>
         </div>
         <div class="row">
           <div class="col-xl-6 offset-xl-1">
             <div class="border-side-block">
-              <div class="border-block-title">PLACE IN THE MARKET</div>
-              <p>The global network sets the trend in meeting the needs of the market for goods
-and services. Increasingly, people are looking for product information on the Internet,
-click on advertising banners on websites, use content from the pages of well-known
-online brands on social networks, and recommend web resources to their friends.</p>
+              <div data-tkey="x20" class="border-block-title">PLACE IN THE MARKET</div>
+              <p data-tkey="x21"></p>
             </div>
           </div>
           <div class="col-xl-4 offset-xl-1">
             <div class="border-side-block">
-              <div class="border-block-title">HIGH COMPETITION</div>
-              <p>The toughening of competition in Internet commerce
-is largely due to the increase in the number of mobile users. People go online via smartphones 3 times more often than other devices. And more than 50 percent of users look
-for product information through their phones before buying.</p>
+              <div data-tkey="x22" class="border-block-title">HIGH COMPETITION</div>
+              <p data-tkey="x23"></p>
             </div>
           </div>
           <div class="col-xl-4 offset-xl-8">
             <div class="border-side-block">
-              <div class="border-block-title">USER FACTORS</div>
-              <p>At the same time, the appearance of the site, the ability
-to subscribe to social networks, the quality of content
-and adaptability to mobile platforms play an important role for visitors. So, 75% of users leave the service
-or product page if it takes a long time to load
-or is not optimized for their device.</p>
+              <div data-tkey="x24" class="border-block-title">USER FACTORS</div>
+              <p data-tkey="x25"></p>
             </div>
           </div>
         </div>
@@ -205,40 +193,34 @@ or is not optimized for their device.</p>
       <div class="container">
         <div class="section-title title-center">
           <h2>
-            <span class="h-under">OUR </span>
-            <span class="h-under">SERVICES</span>
+            <span data-tkey="x26" class="h-under">OUR </span>
+            <span data-tkey="x27" class="h-under">SERVICES</span>
           </h2>
         </div>
         <div class="serv-row">
           <div class="row">
             <div class="col-lg-6">
               <div class="serv-block">
-                <div class="serv-block-title">SITE ANALYSIS</div>
-                <p>Before starting a business online or implementing a marketing campaign,<br class="xl-only">
-it is necessary to assess the risks and opportunities. We will test your web<br class="xl-only"> resource, analyze competitors and draw up a detailed report on promising areas.</p>
+                <div data-tkey="x28" class="serv-block-title">SITE ANALYSIS</div>
+                <p data-tkey="x29"></p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="serv-block">
-                <div class="serv-block-title">WEBSITE DEVELOPMENT</div>
-                <p>Own page on the Internet is a must. It allows entrepreneurs to offer<br class="xl-only">
-their services to a wide range of people, to improve the image of a service<br class="xl-only"> or product. Miss-N web developers will create a selling website with<br class="xl-only">
-an optimized structure and responsive design.</p>
+                <div data-tkey="x30" class="serv-block-title">WEBSITE DEVELOPMENT</div>
+                <p data-tkey="x31"></p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="serv-block">
-                <div class="serv-block-title">TECHNICAL DEVELOPMENT</div>
-                <p>In 85% of cases, if you have your own website, it needs internal optimization. <br class="xl-only">Correction of technical errors and elaboration of the structure will help<br class="xl-only">
-to increase the network traffic of the resource. We will prepare pages<br class="xl-only">
-for indexing in the search engines Google and Yandex.</p>
+                <div data-tkey="x32" class="serv-block-title">TECHNICAL DEVELOPMENT</div>
+                <p data-tkey="x33"></p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="serv-block">
-                <div class="serv-block-title">WEB RESOURCE PROMOTION</div>
-                <p>For the promotion to be as effective as possible, it must be implemented<br class="xl-only">
-in an integrated manner. Today, there are more than 7 directions for the<br class="xl-only"> implementation of your own brand on the Internet. Our service will help<br class="xl-only"> you master each and improve your conversion rates several times.</p>
+                <div data-tkey="x34" class="serv-block-title">WEB RESOURCE PROMOTION</div>
+                <p data-tkey="x35"></p>
               </div>
             </div>
           </div>
@@ -251,53 +233,28 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
       <div class="container">
         <div class="section-title title-center">
           <h2>
-            <span class="h-under">PRICE </span>
-            <span class="h-under">AND </span>
-            <span class="h-under">PAYMENTS</span>
+            <span data-tkey="x36" class="h-under">PRICE </span>
+            <span data-tkey="x37" class="h-under">AND </span>
+            <span data-tkey="x38" class="h-under">PAYMENTS</span>
           </h2>
         </div>
         <div class="page-tabs page-content-tabs">
           <div class="page-tab-btns">
-            <button type="button" class="btn btn-tab active" data-tab="content-tab-1">Integrated promotion</button>
-            <button type="button" class="btn btn-tab" data-tab="content-tab-2">Performing a specific task</button>
+            <button type="button" data-tkey="x39" class="btn btn-tab active" data-tab="content-tab-1">Integrated promotion</button>
+            <button type="button" data-tkey="x40" class="btn btn-tab" data-tab="content-tab-2">Performing a specific task</button>
           </div>
           <div class="page-tabs-container">
             <div class="page-tab active" id="content-tab-1">
               <div class="full-promo-cont">
                 <div class="row">
                   <div class="full-promo-col col-lg-7 order-lg-2">
-                    <ul class="full-promo-list">
-                      <li>Website analysis in Web search engines</li>
-                      <li>Analysis of the current web search engine ranking algorithm</li>
-                      <li>Repeated performance of one-time work, if necessary</li>
-                      <li>Drafting technical requirement for texts according to the developed strategy</li>
-                      <li>Preparation, approval and posting of texts</li>
-                      <li>Checking meta tags on web pages for conformity with the developed strategy</li>
-                      <li>Checking and correction the internal interlinking of a website</li>
-                      <li>Drafting technical requirement and writing articles for perpetual article links</li>
-                      <li>Selection of websites for publishing articles with perpetual links</li>
-                      <li>Purchasing perpetual article links</li>
-                      <li>Systematic monitoring of website efficiency</li>
-                      <li>Analysis of website conversion, comparative analysis with competitors</li>
-                      <li>Drafting technical requirement for changes on the website</li>
-                      <li>Making changes according to technical requirement</li>
-                      <li>Analysis of website position dynamics</li>
-                      <li>Analysis of website traffic, determining of traffic channels</li>
-                      <li>Analysis of the website by Google tools for errors or warnings</li>
-                      <li>Correction of detected errors</li>
-                      <li>Preparing ad campaigns in Google AdWords (no ad budget)</li>
+                    <ul data-tkey="x41" class="full-promo-list">
+
                     </ul>
                   </div>
                   <div class="full-promo-side col-lg-5">
-                    <div class="full-promo-text">Integrated promotion includes <br>
-  a large number of different lines<br> of action of our specialists.</div>
-                    <div class="full-promo-block">
-                      The cost of the service starts
-                      <div class="fp-price-block">
-                        <div class="fp-price-text">from</div>
-                        <div class="fp-price">€ 1,000</div>
-                        <div class="fp-price-text fp-price-text-sm">per month</div>
-                      </div>
+                    <div data-tkey="x42" class="full-promo-text"></div>
+                    <div data-tkey="x43" class="full-promo-block">
                     </div>
                   </div>
                 </div>
@@ -310,86 +267,62 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                      <div class="col-xl-5 col-lg-5 offset-xl-1">
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-1" value="500" name="slug[Creating a landing page]">
-                          <label class="form-check-label" for="f-check-1">
-                            <div class="lbl-title">Creating a landing page</div>
-                            <div class="check-summ">From 500 euro</div>
+                          <label class="form-check-label" data-tkey="x44" for="f-check-1">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-2" value="1500" name="slug[Creating a corporate website]">
-                          <label class="form-check-label" for="f-check-2">
-                            <div class="lbl-title">Creating a corporate website</div>
-                            <div class="check-summ">From 1500 euro</div>
+                          <label class="form-check-label" data-tkey="x45" for="f-check-2">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-3" value="4500" name="slug[Creating an online store]">
-                          <label class="form-check-label" for="f-check-3">
-                            <div class="lbl-title">Creating an online store</div>
-                            <div class="check-summ">From 4500 euro</div>
+                          <label class="form-check-label" data-tkey="x46" for="f-check-3">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-4" value="1000" name="slug[Creating a vcard site]">
-                          <label class="form-check-label" for="f-check-4">
-                            <div class="lbl-title">Creating a vcard site</div>
-                            <div class="check-summ">From 1000 euro</div>
+                          <label class="form-check-label" data-tkey="x47" for="f-check-4">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-5" value="5200" name="slug[Creating a portal or service]">
-                          <label class="form-check-label" for="f-check-5">
-                            <div class="lbl-title">Creating a portal or service</div>
-                            <div class="check-summ">From 5200 euro</div>
+                          <label class="form-check-label" data-tkey="x48" for="f-check-5">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-6" value="500" name="slug[Website redesign]">
-                          <label class="form-check-label" for="f-check-6">
-                            <div class="lbl-title">Website redesign</div>
-                            <div class="check-summ">From 500 euro</div>
+                          <label class="form-check-label" data-tkey="x49" for="f-check-6">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-7" value="300" name="slug[Creating a prototype]">
-                          <label class="form-check-label" for="f-check-7">
-                            <div class="lbl-title">Creating a prototype</div>
-                            <div class="check-summ">From 300 euro</div>
+                          <label class="form-check-label" data-tkey="x50" for="f-check-7">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-8" value="120" name="slug[Creating Logo]">
-                          <label class="form-check-label" for="f-check-8">
-                            <div class="lbl-title">Creating Logo</div>
-                            <div class="check-summ">From 120 euro</div>
+                          <label class="form-check-label" data-tkey="x51" for="f-check-8">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-9" value="300" name="slug[Creating a Brand book]">
-                          <label class="form-check-label" for="f-check-9">
-                            <div class="lbl-title">Creating a Brand book</div>
-                            <div class="check-summ">From 300 euro</div>
+                          <label class="form-check-label" data-tkey="x52" for="f-check-9">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-10" value="80" name="slug[The formation of the semantic core]">
-                          <label class="form-check-label" for="f-check-10">
-                            <div class="lbl-title">The formation of the semantic core</div>
-                            <div class="check-summ">From 80 euro</div>
+                          <label class="form-check-label" data-tkey="x53" for="f-check-10">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-11" value="200" name="slug[Search audit]">
-                          <label class="form-check-label" for="f-check-11">
-                            <div class="lbl-title">Search audit</div>
-                            <div class="check-summ">From 200 euro</div>
+                          <label class="form-check-label" data-tkey="x54" for="f-check-11">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-12" value="190" name="slug[Technical audit]">
-                          <label class="form-check-label" for="f-check-12">
-                            <div class="lbl-title">Technical audit</div>
-                            <div class="check-summ">From 190 euro</div>
+                          <label class="form-check-label" data-tkey="x55" for="f-check-12">
                           </label>
                         </div>
                      </div>
@@ -397,93 +330,69 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                      <div class="col-xl-6 col-lg-7">
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-13" value="250" name="slug[Search for elements that interfere with site ranking]">
-                          <label class="form-check-label" for="f-check-13">
-                            <div class="lbl-title">Search for elements that interfere with site ranking</div>
-                            <div class="check-summ">From 250 euro</div>
+                          <label class="form-check-label" data-tkey="x56" for="f-check-13">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-14" value="150" name="slug[Text optimization audit]">
-                          <label class="form-check-label" for="f-check-14">
-                            <div class="lbl-title">Text optimization audit</div>
-                            <div class="check-summ">From 150 euro</div>
+                          <label class="form-check-label" data-tkey="x57" for="f-check-14">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-15" value="300" name="slug[Company Information Audit]">
-                          <label class="form-check-label" for="f-check-15">
-                            <div class="lbl-title">Company Information Audit</div>
-                            <div class="check-summ">From 300 euro</div>
+                          <label class="form-check-label" data-tkey="x58" for="f-check-15">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-16" value="300" name="slug[Audit of site link optimization]">
-                          <label class="form-check-label" for="f-check-16">
-                            <div class="lbl-title">Audit of site link optimization</div>
-                            <div class="check-summ">From 300 euro</div>
+                          <label class="form-check-label" data-tkey="x59" for="f-check-16">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-17" value="320" name="slug[Audit of commercial factors]">
-                          <label class="form-check-label" for="f-check-17">
-                            <div class="lbl-title">Audit of commercial factors</div>
-                            <div class="check-summ">From 320 euro</div>
+                          <label class="form-check-label" data-tkey="x60" for="f-check-17">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-18" value="200" name="slug[Full analysis of a competing site]">
-                          <label class="form-check-label" for="f-check-18">
-                            <div class="lbl-title">Full analysis of a competing site</div>
-                            <div class="check-summ">From 200 euro</div>
+                          <label class="form-check-label" data-tkey="x61" for="f-check-18">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-19" value="200" name="slug[Developing a website promotion strategy]">
-                          <label class="form-check-label" for="f-check-19">
-                            <div class="lbl-title">Developing a website promotion strategy</div>
-                            <div class="check-summ">From 200 euro</div>
+                          <label class="form-check-label" data-tkey="x62" for="f-check-19">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-20" value="20" name="slug[Installation of counters]">
-                          <label class="form-check-label" for="f-check-20">
-                            <div class="lbl-title">Installation of counters</div>
-                            <div class="check-summ">From 20 euro</div>
+                          <label class="form-check-label" data-tkey="x63" for="f-check-20">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-21" value="0" name="slug[Filling the site with content]">
-                          <label class="form-check-label" for="f-check-21">
-                            <div class="lbl-title">Filling the site with content</div>
-                            <div class="check-summ">Individually *</div>
+                          <label class="form-check-label" data-tkey="x64" for="f-check-21">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-22" value="200" name="slug[Elimination of negative elements of ranking]">
-                          <label class="form-check-label" for="f-check-22">
-                            <div class="lbl-title">Elimination of negative elements of ranking</div>
-                            <div class="check-summ">From 200 euro</div>
+                          <label class="form-check-label" data-tkey="x65" for="f-check-22">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-23" value="110" name="slug[Saturation of the site with selling elements]">
-                          <label class="form-check-label" for="f-check-23">
-                            <div class="lbl-title">Saturation of the site with selling elements</div>
-                            <div class="check-summ">From 110 euro</div>
+                          <label class="form-check-label" data-tkey="x66" for="f-check-23">
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
                           <input class="form-check-input" type="checkbox" id="f-check-24" value="200" name="slug[Website speed optimization]">
-                          <label class="form-check-label" for="f-check-24">
-                            <div class="lbl-title">Website speed optimization</div>
-                            <div class="check-summ">From 200 euro</div>
+                          <label class="form-check-label" data-tkey="x67" for="f-check-24">
                           </label>
                         </div>
 
 
                      </div>
                    </div>
-                   <div class="check-cont-foot">* It is calculated individually and depends on the subject <br>of the texts, as well as the volume</div>
+                   <div data-tkey="x68" class="check-cont-foot"></div>
                  </div>
               </div>
             </div>
@@ -493,7 +402,7 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                     <div class="col-lg-6">
                       <div class="form-group custom-group">
                         <div class="custom-lbl">
-                          <div class="custom-lbl-title">First and second name</div>
+                          <div data-tkey="x69" class="custom-lbl-title"></div>
                         </div>
                         <div class="form-row custom-form-row">
                           <div class="custom-select-cont">
@@ -507,7 +416,7 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                         <div class="col-lg-6">
                           <div class="form-group custom-group">
                             <div class="custom-lbl">
-                              <div class="custom-lbl-title">your phone number</div>
+                              <div data-tkey="x70" class="custom-lbl-title"></div>
                             </div>
                             <div class="form-row custom-form-row">
                               <div class="custom-select-cont">
@@ -519,14 +428,14 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                         <div class="col-lg-6">
                           <div class="form-group custom-group">
                             <div class="custom-lbl">
-                              <div class="custom-lbl-title">your country</div>
+                              <div data-tkey="x71" class="custom-lbl-title"></div>
                             </div>
                             <div class="form-row custom-form-row">
                              <div class="custom-select-cont">
                                 <select id="select-88" class="w-custom-select custom-select" name="your_country">
-                                  <option value="Netherlands">Netherlands</option>
-                                  <option value="Estonia">Estonia</option>
-                                  <option value="Russia">Russia</option>
+                                  <option data-tkey="x72" value="Netherlands"></option>
+                                  <option data-tkey="x73" value="Estonia"></option>
+                                  <option data-tkey="x74" value="Russia"></option>
                                 </select>
                               </div>
                             </div>
@@ -537,14 +446,14 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                     <div class="col-lg-6">
                       <div class="form-group custom-group">
                         <div class="custom-lbl">
-                          <div class="custom-lbl-title">Country of service</div>
+                          <div data-tkey="x75" class="custom-lbl-title"></div>
                         </div>
                         <div class="form-row custom-form-row">
                          <div class="custom-select-cont">
                             <select id="select-14" class="w-custom-select custom-select" name="country_of_service">
-                              <option value="Netherlands">Netherlands</option>
-                              <option value="Estonia">Estonia</option>
-                              <option value="Russia">Russia</option>
+                              <option data-tkey="x76" value="Netherlands"></option>
+                              <option data-tkey="x77" value="Estonia"></option>
+                              <option data-tkey="x78" value="Russia"></option>
                             </select>
                           </div>
                         </div>
@@ -553,7 +462,7 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                     <div class="col-lg-6">
                       <div class="form-group custom-group">
                         <div class="custom-lbl">
-                          <div class="custom-lbl-title">your e-mail</div>
+                          <div data-tkey="x79" class="custom-lbl-title"></div>
                         </div>
                         <div class="form-row custom-form-row">
                           <div class="custom-select-cont">
@@ -565,7 +474,7 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                     <div class="col-lg-6">
                       <div class="form-group custom-group">
                         <div class="custom-lbl">
-                          <div class="custom-lbl-title">DESCRIPTION for pay</div>
+                          <div data-tkey="x80" class="custom-lbl-title"></div>
                         </div>
                         <div class="form-row custom-form-row">
                           <div class="custom-select-cont">
@@ -577,7 +486,7 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                     <div class="col-lg-6">
                       <div class="form-group custom-group tab-group active" data-id="content-tab-1">
                         <div class="custom-lbl">
-                          <div class="custom-lbl-title">sum to pay</div>
+                          <div data-tkey="x81" class="custom-lbl-title"></div>
                         </div>
                         <div class="form-row custom-form-row">
                           <div class="custom-select-cont custom-price custom-val">
@@ -588,7 +497,7 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                       
                       <div class="form-group custom-group form-custom-price tab-group" data-id="content-tab-2">
                         <div class="custom-lbl">
-                          <div class="custom-lbl-title">CALCULATED SUM</div>
+                          <div data-tkey="x82" class="custom-lbl-title"></div>
                         </div>
                         <div class="form-row custom-form-row">
                           <div class="custom-select-cont custom-price">
@@ -604,13 +513,12 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                         <div class="custom-check-cont">
                           <div class="form-check custom-check">
                             <input class="form-check-input" type="checkbox" id="reg-check-99" onclick="$('#submit-1').attr('disabled', !$(this).is(':checked'));" >
-                            <label class="form-check-label" for="reg-check-99">
-                              I agree with <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">privacy policy</a> and <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">data storage policy</a>
+                            <label data-tkey="x83" class="form-check-label" for="reg-check-99">
                             </label>
                           </div>
                         </div>
                         <div class="custom-btn-cont">
-                          <button type="submit" class="btn w-btn sm-btn" id="submit-1" disabled>PAY NOW!</button>
+                          <button data-tkey="x84" type="submit" class="btn w-btn sm-btn" id="submit-1" disabled></button>
                         </div>
                       </div>
                     </div>
@@ -626,9 +534,7 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
     <section class="contact-section" id="contact">
       <div class="container">
         <div class="section-title title-center bg-section-title">
-          <h2>
-            <span class="h-under">CONTACT </span>
-            <span class="h-under">US</span>
+          <h2 data-tkey="x85">
           </h2>
         </div>
         <div class="contact-row">
@@ -640,8 +546,7 @@ in an integrated manner. Today, there are more than 7 directions for the<br clas
                     <div class="contact-img">
                       <img src="assets/img/icon/icon_contact_1.svg" alt="">
                     </div>
-                    <div class="contact-text">Punane Tn 56, Lasnamäe linnaosa, <br>
-Tallinn, Harju maakond, 13619</div>
+                    <div data-tkey="x86" class="contact-text"></div>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -691,7 +596,7 @@ Tallinn, Harju maakond, 13619</div>
               <img src="assets/img/pic/pic_logo_sm.svg" alt="">
             </a>
             <div class="copy-block">Group By XchangeCapitalGroup OÜ
-              <div class="copyright">All © Copyright Reserved 2018-2020</div>
+              <div data-tkey="x87" class="copyright"></div>
             </div>
           </div>
         </div>
@@ -717,41 +622,11 @@ Tallinn, Harju maakond, 13619</div>
     <div class="pop-wrap">
       <div class="pop-head">
         <div class="section-title title-center">
-          <h2>
-            <span class="h-under">Privacy </span>
-            <span class="h-under">policy</span>
+          <h2 data-tkey="x88">
           </h2>
         </div>
       </div>
-      <div class="pop-main pop-main-text pt-1">
-        <p>This privacy policy has been compiled to better serve those who are concerned with how their "Personally identifiable information" (PII) is being used online. PI is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>
-        <h3>What personal information do we collect from the people that visit our blog, website or app?</h3>
-        <p>When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, credit card information or other details so that we can provide our services to you.</p>
-        
-        <h3>When do we collect information?</h3>
-        <p>We collect information from you when you register on our site, place an order, subscribe to a newsletter, fill out a form or enter information on our site.</p>
-        <h3>How do we use your information?<br>
-We may use such information in the following ways:</h3>
-        <p>To personalize your experience on our site and to allow us to deliver the type of content and product offerings in which you are most interested. <br>
-To improve our website in order to better serve you.<br>
-To allow us to better service you in responding to your customer service requests.<br>
-To administer a contest, promotion, survey or other site feature.<br>
-To quickly process your transactions.<br>
-To send periodic emails regarding your order or other products and services.<br>
-How do we protect the information we receive?<br>
-Our site is reviewed on a regular basis for security vulnerabilities in order to make your visit to our site as safe as possible.</p>
-       <p>Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. We do not store credit/debit card information on our systems.</p>
-       <p>We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information.</p>
-       <p>All transactions are processed through a gateway provider and are not stored or processed on our servers.</p>
-       <p>Do we use "cookies"?<br>
-Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</p>
-       <p>We use cookies to:</p>
-       <p>Help remember and process the items in the shopping cart. <br>
-Understand and save user's preferences for future visits.<br>
-Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third party services that track this information on our behalf.<br>
-You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser (like Internet Explorer) settings. Each browser is a little different, so look at your browser's Help menu to learn the correct way to modify your cookies.</p>
-       <p>If you disable cookies off, some features will be disabled It will turn off some of the features that make your site experience more efficient and some of our services will not function properly.</p>
-        
+      <div class="pop-main pop-main-text pt-1" data-tkey="x89">
       </div>
     </div>
   </div>
@@ -774,6 +649,464 @@ You can choose to have your computer warn you each time a cookie is being sent, 
 
     gtag('config', 'UA-169643435-1');
   </script>
+
+  <script>
+
+    var dict = {
+      ru: {
+        'cl': 'Выбрать язык',
+        'x0': 'ГЛАВНАЯ',
+        'x1': 'МАРКЕТИНГ',
+        'x2': 'ПРОДВИЖЕНИЕ',
+        'x3': 'УСЛУГИ',
+        'x4': 'ПРАЙС-ЛИСТ',
+        'x5': 'КОНТАКТЫ',
+        'x6': 'МЫ ПОМОГАЕМ СОЗДАТЬ САЙТ,<br> ПОВЫШАЕМ КОНВЕРСИЮ,<br> ПРОДВИГАЕМ БРЕНД',
+        'x7': 'Разработка и оптимизация веб-сайтов, продвижение интернет-бренда,<br> поддержание имиджа компании в социальных сетях - все это неотъемлемая часть современного бизнеса.',
+        'x8': 'СОВРЕМЕННАЯ',
+        'x9': 'МАРКЕТИНГОВАЯ',
+        'x10': 'СТУДИЯ',
+        'x11': '«XCHANGECAPITALGROUP OÜ» ПОМОЖЕТ:',
+        'x12': 'Увеличить трафик <br> пользователей',
+        'x13': 'Повысить узнаваемость <br> вашего продукта',
+        'x14': 'Компания XCHANGECAPITALGROUP OÜ <br> с 11-летним опытом',
+        'x15': 'Создать гибкую и эффективную <br> воронку продаж',
+        'x16': 'Увеличить количество активных клиентов',
+        'x17': 'ИНТЕРНЕТ',
+        'x18': 'ПРОДВИЖЕНИЕ',
+        'x19': 'Продвижение в Интернете - залог успешного бизнеса.',
+        'x20': 'МЕСТО НА РЫНКЕ',
+        'x21': 'Глобальная сеть задает тренд в удовлетворении потребностей рынка в товарах и услугах. Все чаще люди ищут информацию о продуктах в Интернете, нажимают на рекламные баннеры на веб-сайтах, используют контент со страниц известных онлайн-брендов в социальных сетях и рекомендуют веб-ресурсы своим друзьям.',
+        'x22': 'ВЫСОКАЯ КОНКУРЕНЦИЯ',
+        'x23': 'Ужесточение конкуренции в интернет-торговле во многом связано с увеличением количества пользователей мобильной связи. Люди выходят в Интернет через смартфоны в 3 раза чаще, чем через другие устройства. И более 50 процентов пользователей перед покупкой ищут информацию о продукте на своих телефонах.',
+        'x24': 'ПОЛЬЗОВАТЕЛЬСКИЕ ФАКТОРЫ',
+        'x25': 'Вместе с тем, внешний вид сайта, возможность подписаться на социальные сети, качество контента и адаптивность к мобильным платформам играют важную роль для посетителей. Так, 75% пользователей покидают страницу с услугой или продуктом, если она загружается долго или не оптимизирована для их устройства.',
+        'x26': 'НАШИ',
+        'x27': 'СЕРВИСЫ',
+        'x28': 'АНАЛИЗ САЙТА',
+        'x29': 'Перед тем, как начать бизнес в Интернете или реализовать маркетинговую кампанию,<br class="xl-only"> необходимо оценить риски и возможности. Мы проверим ваш<br class="xl-only"> ресурс, проанализируем конкурентов и составим подробный отчет по перспективным направлениям.',
+        'x30': 'РАЗРАБОТКА САЙТА',
+        'x31': 'Своя страничка в Интернете - обязательно. Это позволяет предпринимателям предлагать<br class="xl-only"> свои услуги широкому кругу людей, это улучшает имидж услуги <br class="xl-only"> или продукта. Веб-разработчики Xchangecapital создадут продающий веб-сайт с<br class="xl-only"> оптимизированной структурой и отзывчивым дизайном.',
+        'x32': 'ТЕХНИЧЕСКОЕ РАЗВИТИЕ',
+        'x33': 'В 85% случаев, если у вас есть собственный сайт, он нуждается во внутренней оптимизации. <br class="xl-only">Исправление технических ошибок и проработка конструкции помогут <br class="xl-only"> для увеличения сетевого трафика ресурса. Подготовим страницы <br class="xl-only"> для индексации в поисковых системах Google и Яндекс.',
+        'x34': 'ПРОДВИЖЕНИЕ ВЕБ-РЕСУРСОВ',
+        'x35': 'Чтобы продвижение было максимально эффективным,<br class="xl-only"> его необходимо реализовать комплексно. Сегодня существует более 7 направлений для<br class="xl-only"> реализации собственного бренда в сети Интернет. Наш сервис поможет<br class="xl-only"> освоить каждый и улучшить коэффициент конверсии в несколько раз.',
+        'x36': 'ПРАЙС',
+        'x37': 'И',
+        'x38': 'ОПЛАТА',
+        'x39': 'Комплексное продвижение',
+        'x40': 'Выполнение конкретной задачи',
+        'x41': '<li>Анализ веб-сайтов в поисковых системах</li>\n' +
+          '<li>Анализ текущего алгоритма ранжирования в поисковых системах</li>\n' +
+          '<li>Повторное выполнение разовых работ при необходимости</li>\n' +
+          '<li>Составление технического задания на тексты согласно разработанной стратегии</li>\n' +
+          '<li>Подготовка, согласование и отправка текстов</li>\n' +
+          '<li>Проверка метатегов на веб-страницах на соответствие разработанной стратегии</li>\n' +
+          '<li>Проверка и исправление внутренней перелинковки сайта</li>\n' +
+          '<li>DСоставление технических требований и написание статей для бессрочных ссылок на статьи</li>\n' +
+          '<li>Подбор сайтов для публикации статей с бессрочными ссылками</li>\n' +
+          '<li>Покупка бессрочных ссылок на статьи</li>\n' +
+          '<li>Систематический мониторинг эффективности сайта</li>\n' +
+          '<li>Анализ конверсии сайта, сравнительный анализ с конкурентами</li>\n' +
+          '<li>Составление технического задания на изменения на сайте</li>\n' +
+          '<li>Внесение изменений по техническому заданию</li>\n' +
+          '<li>Анализ динамики позиций сайта</li>\n' +
+          '<li>Анализ посещаемости сайта, определение каналов трафика</li>\n' +
+          '<li>Анализ сайта инструментами Google на наличие ошибок или предупреждений</li>\n' +
+          '<li>Исправление обнаруженных ошибок</li>\n' +
+          '<li>Подготовка рекламных кампаний в Google AdWords (без рекламного бюджета)</li>',
+        'x42': 'Комплексное продвижение включает <br> большое количество разных линий<br> действий наших специалистов.',
+        'x43': '  Стоимость услуги начинается\n' +
+          '<div class="fp-price-block">\n' +
+          ' <div class="fp-price-text">от</div>\n' +
+          ' <div class="fp-price">1000 евро</div>\n' +
+          '<div class="fp-price-text fp-price-text-sm">в месяц</div>\n' +
+          '</div>',
+        'x44': '<div class="lbl-title">Создание лендинга</div> <div class="check-summ">От 500 евро</div>',
+        'x45': '<div class="lbl-title">Создание корпоративного сайта</div> <div class="check-summ">От 1500 евро</div>',
+        'x46': '<div class="lbl-title">Создание интернет-магазина</div> <div class="check-summ">От 4500 евро</div>',
+        'x47': '<div class="lbl-title">Создание сайта vcard</div> <div class="check-summ">От 1000 евро</div>',
+        'x48': '<div class="lbl-title">Создание портала или сервиса</div> <div class="check-summ">От 5200 евро</div>',
+        'x49': '<div class="lbl-title">Редизайн сайта</div> <div class="check-summ">От 500 евро</div>',
+        'x50': '<div class="lbl-title">Создание прототипа</div> <div class="check-summ">От 300 евро</div>',
+        'x51': '<div class="lbl-title">Создание логотипа</div> <div class="check-summ">От 120 евро</div>',
+        'x52': '<div class="lbl-title">Создание брендбука</div> <div class="check-summ">От 300 евро</div>',
+        'x53': '<div class="lbl-title">Формирование семантического ядра</div> <div class="check-summ">От 80 евро</div>',
+        'x54': '<div class="lbl-title">Поисковый аудит</div> <div class="check-summ">От 200 евро</div>',
+        'x55': '<div class="lbl-title">Технический аудит</div> <div class="check-summ">От 190 евро</div>',
+        'x56': '<div class="lbl-title">Поиск элементов, которые мешают ранжированию сайта</div> <div class="check-summ">От 250 евро</div>',
+        'x57': '<div class="lbl-title">Аудит оптимизации текста</div> <div class="check-summ">От 150 евро</div>',
+        'x58': '<div class="lbl-title">Информационный аудит компании</div> <div class="check-summ">От 300 евро</div>',
+        'x59': '<div class="lbl-title">Аудит оптимизации ссылок на сайт</div> <div class="check-summ">От 300 евро</div>',
+        'x60': '<div class="lbl-title">Аудит коммерческих факторов</div> <div class="check-summ">От 320 евро</div>',
+        'x61': '<div class="lbl-title">Полный анализ сайта-конкурента</div> <div class="check-summ">От 200 евро</div>',
+        'x62': '<div class="lbl-title">Разработка стратегии продвижения сайта</div> <div class="check-summ">От 200 евро</div>',
+        'x63': '<div class="lbl-title">Установка счетчиков</div> <div class="check-summ">От 20 евро</div>',
+        'x64': '<div class="lbl-title">Наполнение сайта контентом</div> <div class="check-summ">ИНДИВИДУАЛЬНО *</div>',
+        'x65': '<div class="lbl-title">Устранение негативных элементов ранжирования</div> <div class="check-summ">От 200 евро</div>',
+        'x66': '<div class="lbl-title">Насыщенность сайта продающими элементами</div> <div class="check-summ">От 110 евро</div>',
+        'x67': '<div class="lbl-title">Оптимизация скорости сайта</div> <div class="check-summ">От 200 евро</div>',
+        'x68': '* Рассчитывается индивидуально и зависит от <br> тематики текстов, а также объема.',
+        'x69': 'ИМЯ И ФАМИЛИЯ',
+        'x70': 'ВАШ НОМЕР ТЕЛЕФОНА',
+        'x71': 'ВАША СТРАНА',
+        'x72': 'Нидерланды',
+        'x73': 'Эстония',
+        'x74': 'Россия',
+        'x75': 'СТРАНА ОБСЛУЖИВАНИЯ',
+        'x76': 'Нидерланды',
+        'x77': 'Эстония',
+        'x78': 'Россия',
+        'x79': 'ВАШ E-MAIL',
+        'x80': 'ОПИСАНИЕ К ПЛАТЕЖУ',
+        'x81': 'СУММА К ОПЛАТЕ',
+        'x82': 'РАСЧЕТНАЯ СУММА',
+        'x83': 'Я СОГЛАСЕН С <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ</a> И <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ХРАНЕНИЕМ ДАННЫХ</a>',
+        'x84': 'ОПЛАТИТЬ',
+        'x85': '<span class="h-under">НАШИ </span> <span class="h-under">КОНТАКТЫ</span>',
+        'x86': 'Punane Tn 56, Lasnamäe linnaosa, <br> Tallinn, Harju maakond, 13619',
+        'x87': 'All © Copyright Reserved 2018-2020',
+        'x88': '<span class="h-under">Политика </span> <span class="h-under">конфиденциальности</span>',
+        'x89': '<p>This privacy policy has been compiled to better serve those who are concerned with how their "Personally identifiable information" (PII) is being used online. PI is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>\n' +
+          '        <h3>What personal information do we collect from the people that visit our blog, website or app?</h3>\n' +
+          '        <p>When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, credit card information or other details so that we can provide our services to you.</p>\n' +
+          '        \n' +
+          '        <h3>When do we collect information?</h3>\n' +
+          '        <p>We collect information from you when you register on our site, place an order, subscribe to a newsletter, fill out a form or enter information on our site.</p>\n' +
+          '        <h3>How do we use your information?<br>\n' +
+          'We may use such information in the following ways:</h3>\n' +
+          '        <p>To personalize your experience on our site and to allow us to deliver the type of content and product offerings in which you are most interested. <br>\n' +
+          'To improve our website in order to better serve you.<br>\n' +
+          'To allow us to better service you in responding to your customer service requests.<br>\n' +
+          'To administer a contest, promotion, survey or other site feature.<br>\n' +
+          'To quickly process your transactions.<br>\n' +
+          'To send periodic emails regarding your order or other products and services.<br>\n' +
+          'How do we protect the information we receive?<br>\n' +
+          'Our site is reviewed on a regular basis for security vulnerabilities in order to make your visit to our site as safe as possible.</p>\n' +
+          '       <p>Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. We do not store credit/debit card information on our systems.</p>\n' +
+          '       <p>We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information.</p>\n' +
+          '       <p>All transactions are processed through a gateway provider and are not stored or processed on our servers.</p>\n' +
+          '       <p>Do we use "cookies"?<br>\n' +
+          'Yes. Cookies are small files that a site or its service provider transfers to your computer\'s hard drive through your Web browser (if you allow) that enables the site\'s or service provider\'s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</p>\n' +
+          '       <p>We use cookies to:</p>\n' +
+          '       <p>Help remember and process the items in the shopping cart. <br>\n' +
+          'Understand and save user\'s preferences for future visits.<br>\n' +
+          'Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third party services that track this information on our behalf.<br>\n' +
+          'You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser (like Internet Explorer) settings. Each browser is a little different, so look at your browser\'s Help menu to learn the correct way to modify your cookies.</p>\n' +
+          '       <p>If you disable cookies off, some features will be disabled It will turn off some of the features that make your site experience more efficient and some of our services will not function properly.</p>\n' +
+          '        ',
+      },
+      en: {
+        'cl': 'Choose language',
+        'x0': 'HOME',
+        'x1': 'MARKETING',
+        'x2': 'PROMOTION',
+        'x3': 'SERVICES',
+        'x4': 'PRICE',
+        'x5': 'CONTACT US',
+        'x6': 'WE HELP TO CREATE A SITE,<br> INCREASE A CONVERSION,<br> PROMOTE A BRAND',
+        'x7': 'Website development and optimization, promotion of an Internet brand,<br> maintaining an image company in social networks - all this is an integral part of modern business.',
+        'x8': 'MODERN',
+        'x9': 'MARKETING',
+        'x10': 'STUDIO',
+        'x11': '“XCHANGECAPITALGROUP OÜ” WILL HELP:',
+        'x12': 'Increase traffic <br> of users',
+        'x13': 'Improve recognizability of <br> your product',
+        'x14': 'XCHANGECAPITALGROUP OÜ <br> with 11 years of experience',
+        'x15': 'Create flexible and effective <br> sales funnel',
+        'x16': 'Promote the number of active customers',
+        'x17': 'INTERNET',
+        'x18': 'PROMOTION',
+        'x19': 'Promotion on the Internet –  a guarantee of a successful business.',
+        'x20': 'PLACE IN THE MARKET',
+        'x21': 'The global network sets the trend in meeting the needs of the market for goods and services. Increasingly, people are looking for product information on the Internet, click on advertising banners on websites, use content from the pages of well-known online brands on social networks, and recommend web resources to their friends.',
+        'x22': 'HIGH COMPETITION',
+        'x23': 'The toughening of competition in Internet commerce is largely due to the increase in the number of mobile users. People go online via smartphones 3 times more often than other devices. And more than 50 percent of users look for product information through their phones before buying.',
+        'x24': 'USER FACTORS',
+        'x25': 'At the same time, the appearance of the site, the ability to subscribe to social networks, the quality of content and adaptability to mobile platforms play an important role for visitors. So, 75% of users leave the service or product page if it takes a long time to load or is not optimized for their device.',
+        'x26': 'OUR',
+        'x27': 'SERVICES',
+        'x28': 'SITE ANALYSIS',
+        'x29': 'Before starting a business online or implementing a marketing campaign,<br class="xl-only"> it is necessary to assess the risks and opportunities. We will test your web<br class="xl-only"> resource, analyze competitors and draw up a detailed report on promising areas.',
+        'x30': 'WEBSITE DEVELOPMENT',
+        'x31': 'Own page on the Internet is a must. It allows entrepreneurs to offer<br class="xl-only"> their services to a wide range of people, to improve the image of a service<br class="xl-only"> or product. Miss-N web developers will create a selling website with<br class="xl-only"> an optimized structure and responsive design.',
+        'x32': 'TECHNICAL DEVELOPMENT',
+        'x33': 'In 85% of cases, if you have your own website, it needs internal optimization. <br class="xl-only">Correction of technical errors and elaboration of the structure will help<br class="xl-only"> to increase the network traffic of the resource. We will prepare pages<br class="xl-only"> for indexing in the search engines Google and Yandex.',
+        'x34': 'WEB RESOURCE PROMOTION',
+        'x35': 'For the promotion to be as effective as possible, it must be implemented<br class="xl-only"> in an integrated manner. Today, there are more than 7 directions for the<br class="xl-only"> implementation of your own brand on the Internet. Our service will help<br class="xl-only"> you master each and improve your conversion rates several times.',
+        'x36': 'PRICE',
+        'x37': 'AND',
+        'x38': 'PAYMENTS',
+        'x39': 'Integrated promotion',
+        'x40': 'Performing a specific task',
+        'x41': '<li>Website analysis in Web search engines</li>\n' +
+          '<li>Analysis of the current web search engine ranking algorithm</li>\n' +
+          '<li>Repeated performance of one-time work, if necessary</li>\n' +
+          '<li>Drafting technical requirement for texts according to the developed strategy</li>\n' +
+          '<li>Preparation, approval and posting of texts</li>\n' +
+          '<li>Checking meta tags on web pages for conformity with the developed strategy</li>\n' +
+          '<li>Checking and correction the internal interlinking of a website</li>\n' +
+          '<li>Drafting technical requirement and writing articles for perpetual article links</li>\n' +
+          '<li>Selection of websites for publishing articles with perpetual links</li>\n' +
+          '<li>Purchasing perpetual article links</li>\n' +
+          '<li>Systematic monitoring of website efficiency</li>\n' +
+          '<li>Analysis of website conversion, comparative analysis with competitors</li>\n' +
+          '<li>Drafting technical requirement for changes on the website</li>\n' +
+          '<li>Making changes according to technical requirement</li>\n' +
+          '<li>Analysis of website position dynamics</li>\n' +
+          '<li>Analysis of website traffic, determining of traffic channels</li>\n' +
+          '<li>Analysis of the website by Google tools for errors or warnings</li>\n' +
+          '<li>Correction of detected errors</li>\n' +
+          '<li>Preparing ad campaigns in Google AdWords (no ad budget)</li>',
+        'x42': 'Integrated promotion includes <br> a large number of different lines<br> of action of our specialists.',
+        'x43': '  The cost of the service starts\n' +
+          '<div class="fp-price-block">\n' +
+          ' <div class="fp-price-text">from</div>\n' +
+          ' <div class="fp-price">€ 1,000</div>\n' +
+          '<div class="fp-price-text fp-price-text-sm">per month</div>\n' +
+          '</div>',
+        'x44': '<div class="lbl-title">Creating a landing page</div> <div class="check-summ">From 500 euro</div>',
+        'x45': '<div class="lbl-title">Creating a corporate website</div> <div class="check-summ">From 1500 euro</div>',
+        'x46': '<div class="lbl-title">Creating an online store</div> <div class="check-summ">From 4500 euro</div>',
+        'x47': '<div class="lbl-title">Creating a vcard site</div> <div class="check-summ">From 1000 euro</div>',
+        'x48': '<div class="lbl-title">Creating a portal or service</div> <div class="check-summ">From 5200 euro</div>',
+        'x49': '<div class="lbl-title">Website redesign</div> <div class="check-summ">From 500 euro</div>',
+        'x50': '<div class="lbl-title">Creating a prototype</div> <div class="check-summ">From 300 euro</div>',
+        'x51': '<div class="lbl-title">Creating Logo</div> <div class="check-summ">From 120 euro</div>',
+        'x52': '<div class="lbl-title">Creating a Brand book</div> <div class="check-summ">From 300 euro</div>',
+        'x53': '<div class="lbl-title">The formation of the semantic core</div> <div class="check-summ">From 80 euro</div>',
+        'x54': '<div class="lbl-title">Search audit</div> <div class="check-summ">From 200 euro</div>',
+        'x55': '<div class="lbl-title">Technical audit</div> <div class="check-summ">From 190 euro</div>',
+        'x56': '<div class="lbl-title">Search for elements that interfere with site ranking</div> <div class="check-summ">From 250 euro</div>',
+        'x57': '<div class="lbl-title">Text optimization audit</div> <div class="check-summ">From 150 euro</div>',
+        'x58': '<div class="lbl-title">Company Information Audit</div> <div class="check-summ">From 300 euro</div>',
+        'x59': '<div class="lbl-title">Audit of site link optimization</div> <div class="check-summ">From 300 euro</div>',
+        'x60': '<div class="lbl-title">Audit of commercial factors</div> <div class="check-summ">From 320 euro</div>',
+        'x61': '<div class="lbl-title">Full analysis of a competing site</div> <div class="check-summ">From 200 euro</div>',
+        'x62': '<div class="lbl-title">Developing a website promotion strategy</div> <div class="check-summ">From 200 euro</div>',
+        'x63': '<div class="lbl-title">Installation of counters</div> <div class="check-summ">From 20 euro</div>',
+        'x64': '<div class="lbl-title">Filling the site with content</div> <div class="check-summ">Individually *</div>',
+        'x65': '<div class="lbl-title">Elimination of negative elements of ranking</div> <div class="check-summ">From 200 euro</div>',
+        'x66': '<div class="lbl-title">Saturation of the site with selling elements</div> <div class="check-summ">From 110 euro</div>',
+        'x67': '<div class="lbl-title">Website speed optimization</div> <div class="check-summ">From 200 euro</div>',
+        'x68': '* It is calculated individually and depends on the subject <br>of the texts, as well as the volume',
+        'x69': 'First and second name',
+        'x70': 'your phone number',
+        'x71': 'your country',
+        'x72': 'Netherlands',
+        'x73': 'Estonia',
+        'x74': 'Russia',
+        'x75': 'Country of service',
+        'x76': 'Netherlands',
+        'x77': 'Estonia',
+        'x78': 'Russia',
+        'x79': 'your e-mail',
+        'x80': 'DESCRIPTION for pay',
+        'x81': 'sum to pay',
+        'x82': 'CALCULATED SUM',
+        'x83': 'I agree with <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">privacy policy</a> and <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">data storage policy</a>',
+        'x84': 'PAY NOW!',
+        'x85': '<span class="h-under">CONTACT </span> <span class="h-under">US</span>',
+        'x86': 'Punane Tn 56, Lasnamäe linnaosa, <br> Tallinn, Harju maakond, 13619',
+        'x87': 'All © Copyright Reserved 2018-2020',
+        'x88': '<span class="h-under">Privacy </span> <span class="h-under">policy</span>',
+        'x89': '<p>This privacy policy has been compiled to better serve those who are concerned with how their "Personally identifiable information" (PII) is being used online. PI is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>\n' +
+          '        <h3>What personal information do we collect from the people that visit our blog, website or app?</h3>\n' +
+          '        <p>When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, credit card information or other details so that we can provide our services to you.</p>\n' +
+          '        \n' +
+          '        <h3>When do we collect information?</h3>\n' +
+          '        <p>We collect information from you when you register on our site, place an order, subscribe to a newsletter, fill out a form or enter information on our site.</p>\n' +
+          '        <h3>How do we use your information?<br>\n' +
+          'We may use such information in the following ways:</h3>\n' +
+          '        <p>To personalize your experience on our site and to allow us to deliver the type of content and product offerings in which you are most interested. <br>\n' +
+          'To improve our website in order to better serve you.<br>\n' +
+          'To allow us to better service you in responding to your customer service requests.<br>\n' +
+          'To administer a contest, promotion, survey or other site feature.<br>\n' +
+          'To quickly process your transactions.<br>\n' +
+          'To send periodic emails regarding your order or other products and services.<br>\n' +
+          'How do we protect the information we receive?<br>\n' +
+          'Our site is reviewed on a regular basis for security vulnerabilities in order to make your visit to our site as safe as possible.</p>\n' +
+          '       <p>Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. We do not store credit/debit card information on our systems.</p>\n' +
+          '       <p>We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information.</p>\n' +
+          '       <p>All transactions are processed through a gateway provider and are not stored or processed on our servers.</p>\n' +
+          '       <p>Do we use "cookies"?<br>\n' +
+          'Yes. Cookies are small files that a site or its service provider transfers to your computer\'s hard drive through your Web browser (if you allow) that enables the site\'s or service provider\'s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</p>\n' +
+          '       <p>We use cookies to:</p>\n' +
+          '       <p>Help remember and process the items in the shopping cart. <br>\n' +
+          'Understand and save user\'s preferences for future visits.<br>\n' +
+          'Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third party services that track this information on our behalf.<br>\n' +
+          'You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser (like Internet Explorer) settings. Each browser is a little different, so look at your browser\'s Help menu to learn the correct way to modify your cookies.</p>\n' +
+          '       <p>If you disable cookies off, some features will be disabled It will turn off some of the features that make your site experience more efficient and some of our services will not function properly.</p>\n' +
+          '        ',
+      },
+      es: {
+        'cl': 'Vali keel',
+        'x0': 'PEAMINE',
+        'x1': 'TURUNDUS',
+        'x2': 'EDENDAMINE',
+        'x3': 'TEENUSED',
+        'x4': 'HINNAKIRI',
+        'x5': 'KONTAKTID',
+        'x6': 'ME AITAME LUUA VEEBISAIDI,<br> TÕSTAME KONVERSIOONI,<br> EDENDAME BRÄNDI ',
+        'x7': 'Veebisaitide  väljatöötamine ja optimeerimine, Interneti-brändi edendamine,<br>   ettevõtte maine hoidmine sotsiaalvõrgustikes - see kõik on kaasaegse äri lahutamatu osa.',
+        'x8': 'KAASAEGNE',
+        'x9': 'TURUNDUS',
+        'x10': 'STUUDIO',
+        'x11': '"XCHANGECAPITALGROUP OÜ" AITAB:',
+        'x12': 'Suurendada <br> kasutajaliiklust',
+        'x13': 'Tõsta teie <br> toote teadlikkust',
+        'x14': 'Ettevõte XCHANGECAPITALGROUP OÜ <br> on 11-aastase kogemusega',
+        'x15': 'Luua paindlikku ja tõhusat <br> müügilehtrit',
+        'x16': 'Suurendada aktiivsete klientide arvu',
+        'x17': 'INTERNET',
+        'x18': 'EDENDAMINE',
+        'x19': 'Edendamine Internetis - eduka äri tegur.',
+        'x20': 'KOHT TURUL',
+        'x21': 'Globaalne võrgustik seab kaupade ja teenuste turu vajaduste rahuldamise trendi. Järjest enam otsivad inimesed Internetist tooteteavet, vajutavad veebisaitidel ribareklaamidele, kasutavad sotsiaalvõrgustikes tuntud online-brändide lehtede sisu ja soovitavad veebiressursse­oma sõpradele.',
+        'x22': 'KÕRGE KONKURENTS',
+        'x23': 'Konkurentsi karmistamine interneti-kaubanduses on enamasti seotud mobiilside kasutajate arvu suurenemisega. Inimesed pääsevad Internetti nutitelefonide kaudu 3 korda sagedamini kui teiste seadmete kaudu. Ja üle 50 protsendi kasutajatest otsivad enne ostu sooritamist oma telefonidelt tooteteavet.',
+        'x24': 'KASUTAJATEGURID',
+        'x25': 'Sealjuures mängib külastajatele olulist rolli veebisaidi välimus, võimalus sotsiaalvõrgustikke tellida, sisu kvaliteet ja kohanemisvõimalus mobiilplatvormidele. Nii lahkub 75% kasutajatest teenuse või tootega lehelt, kui selle laadimine võtab palju aega või   pole nende seadme jaoks optimeeritud.',
+        'x26': 'MEIE',
+        'x27': 'TEENINDUSED ',
+        'x28': 'VEEBISAIDI ANALÜÜS',
+        'x29': 'Enne Internetis äri alustamist või turunduskampaania realiseerimist on vaja hinnata riske ja võimalusi.<br class="xl-only"> Me kontrollime teie ressurssi, analüüsime konkurente ja koostame <br class="xl-only"> üksikasjalikku aruande perspektiivsete valdkondade kohta.',
+        'x30': 'VEEBILEHE VÄLJATÖÖTAMINE',
+        'x31': 'Oma lehekülg Internetis - tingimata. See võimaldab ettevõtjatel pakkuda oma teenuseid suurele hulgale <br class="xl-only"> inimestele, see parandab teenuse või toote mainet. Xchangecapitali veebiarendajad loovad optimeeritud <br class="xl-only"> struktuuri ja tundliku kujundusega turunduse veebisaidi.',
+        'x32': 'TEHNILINE ARENG',
+        'x33': '85% juhtudest, kui teil on oma veebisait, vajab see sisemist optimeerimist. <br class="xl-only"> Tehniliste vigade parandamine ja konstruktsiooni läbitöötamine aitavad suurendada ressursi võrguliiklust. <br class="xl-only"> Valmistame ette lehed indekseerimiseks Google\"i ja Yandexi otsingusüsteemides.',
+        'x34': 'VEEBILEHE VÄLJATÖÖTAMINE',
+        'x35': 'Oma lehekülg Internetis - tingimata. See võimaldab ettevõtjatel pakkuda oma teenuseid suurele hulgale <br class="xl-only"> inimestele, see parandab teenuse või toote mainet. Xchangecapitali veebiarendajad loovad optimeeritud <br class="xl-only"> struktuuri ja tundliku kujundusega turunduse veebisaidi.',
+        'x36': 'HIND',
+        'x37': 'JA',
+        'x38': 'MAKSMINE',
+        'x39': 'Kompleksne edendamine',
+        'x40': 'Konkreetse ülesande elluviimine',
+        'x41': '<li>Analüüs veebilehed otsingumootor</li>\n' +
+          '<li>Analüüs praegune algoritm järjekohal otsingumootorid</li>\n' +
+          '<li>Uuesti rakendamise ühekordsete tööde vajaduse korral</li>\n' +
+          '<li>Koostamine tehnilise ülesande teksti kohaselt on välja töötatud strateegia</li>\n' +
+          '<li>Ettevalmistamine, kooskõlastamine ja saatmine tekste</li>\n' +
+          '<li>Kontrolli meta tag veebilehtede vastavust kehtestatud strateegia</li>\n' +
+          '<li>Kontrollimine ja parandamine sisemine перелинковки saidil</li>\n' +
+          '<li>DСоставление tehnilised nõuded ja artiklite kirjutamiseks бессрочных linke artiklitele</li>\n' +
+          '<li>Valik veebilehed avaldada artikleid tähtajatu link</li>\n' +
+          '<li>Osta бессрочных linke artiklitele</li>\n' +
+          '<li>Süstemaatiline järelevalve tõhusust saidil</li>\n' +
+          '<li>Analüüs konversiooni veebilehel, võrdlev analüüs konkurentidega</li>\n' +
+          '<li>Koostamine kirjeldamine muutus on saidil</li>\n' +
+          '<li>muudatuste Tegemine tehnilise ülesande</li>\n' +
+          '<li>Analüüs dünaamika positsioone saidil</li>\n' +
+          '<li>Analüüs kohalolijate määratlus kanalite liiklus</li>\n' +
+          '<li>saidi Analüüsi vahendid Google vigu või hoiatusi</li>\n' +
+          '<li>Fix leitud vigu</li>\n' +
+          '<li>Ettevalmistamine reklaamikampaaniad Google AdWords (ilma reklaami eelarve)</li>',
+        'x42': 'Igakülgne edendamine hõlmab <br> suur hulk erinevaid ridu<br> tegevus meie spetsialistid.',
+        'x43': 'Teenuse maksumus algab\n' +
+          '<div class="fp-price-block">\n' +
+          '<div class="fp-price-text">alates</div>\n' +
+          '<div class="fp-price">1000 euro </div>\n' +
+          '<div class="fp-price-text fp-price-text-sm">kuus</div>\n' +
+          '</div>',
+        'x44': '<div class="lbl-title">Loo лендинга</div> <div class="check-summ">Alates 500 euro </div>',
+        'x45': '<div class="lbl-title">Loo ettevõtte koduleheküljel</div> <div class="check-summ">Alates 1500 euro</div>',
+        'x46': '<div class="lbl-title">Loo interneti-poe</div> <div class="check-summ">Alates 4500 euro</div>',
+        'x47': '<div class="lbl-title">kodulehe Loomine vcard</div> <div class="check-summ">Alates 1000 euro</div>',
+        'x48': '<div class="lbl-title">portaali Loomine või teenuse</div> <div class="check-summ">Alates 5200 euro</div>',
+        'x49': '<div class="lbl-title">veebileht Ümberkujundamine</div> <div class="check-summ">Alates 500 euro</div>',
+        'x50': '<div class="lbl-title">Loo prototüüp</div> <div class="check-summ">Alates 300 euro</div>',
+        'x51': '<div class="lbl-title">logo Loomine</div> <div class="check-summ">Alates 120 euro</div>',
+        'x52': '<div class="lbl-title">Loo брендбука</div> <div class="check-summ">Alates 300 euro</div>',
+        'x53': '<div class="lbl-title">Moodustamise semantiline kernel</div> <div class="check-summ">Alates 80 euro</div>',
+        'x54': '<div class="lbl-title">Otsingu audit</div> <div class="check-summ">Alates 200 euro</div>',
+        'x55': '<div class="lbl-title">Tehniline audit</div> <div class="check-summ">Alates 190 euro</div>',
+        'x56': '<div class="lbl-title">Otsi üksusi, mis häirivad ранжированию saidil</div> <div class="check-summ">Alates 250 euro</div>',
+        'x57': '<div class="lbl-title">Audit optimeerimine teksti</div> <div class="check-summ">Alates 150 euro</div>',
+        'x58': '<div class="lbl-title">Information ettevõtte auditi</div> <div class="check-summ">Alates 300 euro</div>',
+        'x59': '<div class="lbl-title">Audit optimeerimine lingid saidile</div> <div class="check-summ">Alates 300 euro</div>',
+        'x60': '<div class="lbl-title">Audit kaubik tegureid</div> <div class="check-summ">Alates 320 euro</div>',
+        'x61': '<div class="lbl-title">Täielik analüüs saidi konkurendi</div> <div class="check-summ">Alates 200 euro</div>',
+        'x62': '<div class="lbl-title">Arengu edendamise strateegia saidil</div> <div class="check-summ">Alates 200 euro</div>',
+        'x63': '<div class="lbl-title">Add counters</div> <div class="check-summ">Alates 20 euro</div>',
+        'x64': '<div class="lbl-title">Märksõna saidi sisu</div> <div class="check-summ">INDIVIDUAALSELT *</div>',
+        'x65': '<div class="lbl-title">kaotada negatiivsed elemendid hinne</div> <div class="check-summ">Alates 200 euro</div>',
+        'x66': '<div class="lbl-title">Küllastus saidi müüvad elemendid</div> <div class="check-summ">Alates 110 euro</div>',
+        'x67': '<div class="lbl-title">Optimeerimine saidi kiiruse</div> <div class="check-summ">Alates 200 euro</div>',
+        'x68': '* It is calculated individually and depends on the subject <br>of the texts, as well as the volume',
+        'x69': 'EES-JA PEREKONNANIMI ',
+        'x70': 'TEIE TELEFONINUMBER ',
+        'x71': 'TEIE RIIK ',
+        'x72': 'Madalmaad',
+        'x73': 'Eesti',
+        'x74': 'Venemaa',
+        'x75': 'Teenuse osutamise riik',
+        'x76': 'Madalmaad',
+        'x77': 'Eesti',
+        'x78': 'Venemaa',
+        'x79': 'TEIE E-MAIL ',
+        'x80': 'MAKSE KIRJELDUS',
+        'x81': 'SUMMA TASUMIST',
+        'x82': 'ARVUTATUD SUMMA',
+        'x83': 'MA olen teiega NÕUS, <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">PRIVAATSUS</a> Ja <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ANDMETE SÄILITAMINE</a>',
+        'x84': 'TASUDA',
+        'x85': '<span class="h-under">MEIE</span> <span class="h-under">KONTAKTID</span>',
+        'x86': 'Punane Tn 56, Lasnamäe linnaosa, <br> Tallinn, Harju maakond, 13619',
+        'x87': 'All © Copyright Reserved 2018-2020',
+        'x88': '<span class="h-under">Privacy </span> <span class="h-under">policy</span>',
+        'x89': '<p>This privacy policy has been compiled to better serve those who are concerned with how their "Personally identifiable information" (PII) is being used online. PI is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>\n' +
+          '        <h3>What personal information do we collect from the people that visit our blog, website or app?</h3>\n' +
+          '        <p>When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, credit card information or other details so that we can provide our services to you.</p>\n' +
+          '        \n' +
+          '        <h3>When do we collect information?</h3>\n' +
+          '        <p>We collect information from you when you register on our site, place an order, subscribe to a newsletter, fill out a form or enter information on our site.</p>\n' +
+          '        <h3>How do we use your information?<br>\n' +
+          'We may use such information in the following ways:</h3>\n' +
+          '        <p>To personalize your experience on our site and to allow us to deliver the type of content and product offerings in which you are most interested. <br>\n' +
+          'To improve our website in order to better serve you.<br>\n' +
+          'To allow us to better service you in responding to your customer service requests.<br>\n' +
+          'To administer a contest, promotion, survey or other site feature.<br>\n' +
+          'To quickly process your transactions.<br>\n' +
+          'To send periodic emails regarding your order or other products and services.<br>\n' +
+          'How do we protect the information we receive?<br>\n' +
+          'Our site is reviewed on a regular basis for security vulnerabilities in order to make your visit to our site as safe as possible.</p>\n' +
+          '       <p>Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. We do not store credit/debit card information on our systems.</p>\n' +
+          '       <p>We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information.</p>\n' +
+          '       <p>All transactions are processed through a gateway provider and are not stored or processed on our servers.</p>\n' +
+          '       <p>Do we use "cookies"?<br>\n' +
+          'Yes. Cookies are small files that a site or its service provider transfers to your computer\'s hard drive through your Web browser (if you allow) that enables the site\'s or service provider\'s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</p>\n' +
+          '       <p>We use cookies to:</p>\n' +
+          '       <p>Help remember and process the items in the shopping cart. <br>\n' +
+          'Understand and save user\'s preferences for future visits.<br>\n' +
+          'Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third party services that track this information on our behalf.<br>\n' +
+          'You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser (like Internet Explorer) settings. Each browser is a little different, so look at your browser\'s Help menu to learn the correct way to modify your cookies.</p>\n' +
+          '       <p>If you disable cookies off, some features will be disabled It will turn off some of the features that make your site experience more efficient and some of our services will not function properly.</p>\n' +
+          '        ',
+      }
+    };
+
+    html5Translate = function(dict, lang){
+
+      $('[data-tkey]').each(function(){
+        $(this).html( dict[ lang ][ $(this).data('tkey') ] );
+      });
+
+      switch (lang) {
+        case 'ru':
+          $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_ru.svg" alt=""></span>Русский</div>');
+          break
+        case 'en':
+          $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_eng.svg" alt=""></span>English</div>');
+          break
+        case 'es':
+          $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_est.svg" alt=""></span>Eesti</div>');
+          break
+      }
+    };
+
+    html5Translate(dict, 'en')
+
+  </script>
+
 </body>
 
 </html>
