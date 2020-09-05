@@ -106,20 +106,40 @@ function addCommas(nStr) {
 }
 
 $(function () {
+
+  let CalculatorSlug = function(){
+
+
+    let currentSumm = 0;
+
+    $('.custom-price-check .form-check-input:checked').each(function(){
+      let hours = Math.max(1, parseInt($(this).next().find('.custom-calc-input').val()));
+      currentSumm += $(this).val() * hours;
+    });
+
+
+    $('#summ-price').attr('value',currentSumm);
+    $('#summ-price-block').text(addCommas(currentSumm));
+
+
+  }
+
   if (($('.custom-price-check .form-check-input').length) && ($('#summ-price').length)) {
-      var currentSumm = 0;
-      $('#summ-price').attr('value',currentSumm);
-      $('#summ-price-block').text(currentSumm);
-      $('.custom-price-check .form-check-input').click(function(){
-        if ($(this).is(':checked')) {
-          currentSumm = currentSumm + parseInt($(this).val());
-        } else {
-          currentSumm = currentSumm - parseInt($(this).val());
-        }
-        $('#summ-price').attr('value',currentSumm);
-        $('#summ-price-block').text(addCommas(currentSumm));
-      });
-  } else {};
+    var currentSumm = 0;
+    $('#summ-price').attr('value',currentSumm);
+    $('#summ-price-block').text(currentSumm);
+
+    $('.custom-price-check .form-check-input').on('change', function(){
+      // $(this).next().find('.custom-calc-input').prop('disabled', !$(this).prop('checked'))
+      CalculatorSlug();
+    });
+    $('.custom-price-check .custom-calc-input').on('change', function(){
+      CalculatorSlug();
+      return false;
+    }).keydown(function(){
+      CalculatorSlug();
+    });
+  }
 
   if($('#submit-1').length){
     $('#submit-1').on('click', function(){

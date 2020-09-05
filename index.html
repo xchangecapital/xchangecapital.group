@@ -231,11 +231,22 @@ funnel of sales</div>
       <form action="page_price.html" method="post" accept-charset="utf-8">
 
       <div class="container">
-        <div class="section-title title-center">
+        <div class="section-title title-center section-title-val">
           <h2>
             <span data-tkey="x36" class="h-under">PRICE </span>
             <span data-tkey="x37" class="h-under">AND </span>
             <span data-tkey="x38" class="h-under">PAYMENTS</span>
+            <div class="title-custom-cont d-none">
+              <span class="title-select-text">in</span>
+              <div class="custom-select-cont custom-price custom-val select-val" data-val="eur">
+                <select disabled name="" id="select-99" class="w-custom-select custom-select custom-select-val" data-name="val-99">
+                  <option value="eur" data-subtext="eur">Eur</option>
+                  <option value="usd" data-subtext="usd">USD</option>
+                  <option value="rub" data-subtext="rub">rub</option>
+                </select>
+              </div>
+            </div>
+            
           </h2>
         </div>
         <div class="page-tabs page-content-tabs">
@@ -264,128 +275,200 @@ funnel of sales</div>
                <div class="promo-form-cont">
                  <div class="check-head-cont">
                    <div class="row">
-                     <div class="col-xl-5 col-lg-5 offset-xl-1">
+                     <div class="col-lg-6 first-col">
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-1" value="500" name="slug[Creating a landing page]">
-                          <label class="form-check-label" data-tkey="x44" for="f-check-1">
+                          <input class="form-check-input" type="checkbox" id="f-check-1" value="500" name="slug[Creating a landing page][price]">
+                          <label class="form-check-label" for="f-check-1">
+                            <div class="lbl-title" data-tkey="x44"></div>
+                            <div class="custom-input-cont" data-lbl="Hours"><input type="number" name="slug[Creating a landing page][hours]" class="w-custom-input custom-calc-input" value="1"> </div>
+                            <div class="check-summ" data-lbl="Cost">500 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-2" value="1500" name="slug[Creating a corporate website]">
-                          <label class="form-check-label" data-tkey="x45" for="f-check-2">
+                          <input class="form-check-input" type="checkbox" id="f-check-2" value="1500" name="slug[Creating a corporate website][price]">
+                          <label class="form-check-label" for="f-check-2">
+                            <div class="lbl-title" data-tkey="x45"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Creating a corporate website][hours]" value="1"> </div>
+                            <div class="check-summ">1500 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-3" value="4500" name="slug[Creating an online store]">
-                          <label class="form-check-label" data-tkey="x46" for="f-check-3">
+                          <input class="form-check-input" type="checkbox" id="f-check-3" value="4500" name="slug[Creating an online store][price]">
+                          <label class="form-check-label" for="f-check-3">
+                            <div class="lbl-title" data-tkey="x46"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Creating an online store][hours]" value="1"> </div>
+                            <div class="check-summ">4500 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-4" value="1000" name="slug[Creating a vcard site]">
-                          <label class="form-check-label" data-tkey="x47" for="f-check-4">
+                          <input class="form-check-input" type="checkbox" id="f-check-4" value="1000" name="slug[Creating a vcard site][price]">
+                          <label class="form-check-label" for="f-check-4">
+                            <div class="lbl-title" data-tkey="x47"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Creating a vcard site][hours]" value="1"> </div>
+                            <div class="check-summ">1000 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-5" value="5200" name="slug[Creating a portal or service]">
-                          <label class="form-check-label" data-tkey="x48" for="f-check-5">
+                          <input class="form-check-input" type="checkbox" id="f-check-5" value="5200" name="slug[Creating a portal or service][price]">
+                          <label class="form-check-label" for="f-check-5">
+                            <div class="lbl-title" data-tkey="x48"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Creating a portal or service][hours]" value="1"> </div>
+                            <div class="check-summ">5200 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-6" value="500" name="slug[Website redesign]">
-                          <label class="form-check-label" data-tkey="x49" for="f-check-6">
+                          <input class="form-check-input" type="checkbox" id="f-check-6" value="500" name="slug[Website redesign][price]">
+                          <label class="form-check-label" for="f-check-6">
+                            <div class="lbl-title" data-tkey="x49"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Website redesign][hours]" value="1"> </div>
+                            <div class="check-summ">500 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-7" value="300" name="slug[Creating a prototype]">
-                          <label class="form-check-label" data-tkey="x50" for="f-check-7">
+                          <input class="form-check-input" type="checkbox" id="f-check-7" value="300" name="slug[Creating a prototype][price]">
+                          <label class="form-check-label" for="f-check-7">
+                            <div class="lbl-title" data-tkey="x50"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Creating a prototype][hours]" value="1"> </div>
+                            <div class="check-summ">300 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-8" value="120" name="slug[Creating Logo]">
-                          <label class="form-check-label" data-tkey="x51" for="f-check-8">
+                          <input class="form-check-input" type="checkbox" id="f-check-8" value="120" name="slug[Creating Logo][price]">
+                          <label class="form-check-label" for="f-check-8">
+                            <div class="lbl-title" data-tkey="x51"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Creating Logo][hours]" value="1"> </div>
+                            <div class="check-summ">120 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-9" value="300" name="slug[Creating a Brand book]">
-                          <label class="form-check-label" data-tkey="x52" for="f-check-9">
+                          <input class="form-check-input" type="checkbox" id="f-check-9" value="300" name="slug[Creating a Brand book][price]">
+                          <label class="form-check-label" for="f-check-9">
+                            <div class="lbl-title" data-tkey="x52"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Creating a Brand book][hours]" value="1"> </div>
+                            <div class="check-summ">300 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-10" value="80" name="slug[The formation of the semantic core]">
-                          <label class="form-check-label" data-tkey="x53" for="f-check-10">
+                          <input class="form-check-input" type="checkbox" id="f-check-10" value="80" name="slug[The formation of the semantic core][price]">
+                          <label class="form-check-label" for="f-check-10">
+                            <div class="lbl-title" data-tkey="x53"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[The formation of the semantic core][hours]" value="1"> </div>
+                            <div class="check-summ">80 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-11" value="200" name="slug[Search audit]">
-                          <label class="form-check-label" data-tkey="x54" for="f-check-11">
+                          <input class="form-check-input" type="checkbox" id="f-check-11" value="200" name="slug[Search audit][price]">
+                          <label class="form-check-label" for="f-check-11">
+                            <div class="lbl-title" data-tkey="x54"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Search audit][hours]" value="1"> </div>
+                            <div class="check-summ">200 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-12" value="190" name="slug[Technical audit]">
-                          <label class="form-check-label" data-tkey="x55" for="f-check-12">
+                          <input class="form-check-input" type="checkbox" id="f-check-12" value="190" name="slug[Technical audit][price]">
+                          <label class="form-check-label" for="f-check-12">
+                            <div class="lbl-title" data-tkey="x55"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Technical audit][hours]" value="1"> </div>
+                            <div class="check-summ">190 EUR</div>
                           </label>
                         </div>
                      </div>
                      
-                     <div class="col-xl-6 col-lg-7">
+                     <div class="col-lg-6">
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-13" value="250" name="slug[Search for elements that interfere with site ranking]">
-                          <label class="form-check-label" data-tkey="x56" for="f-check-13">
+                          <input class="form-check-input" type="checkbox" id="f-check-13" value="250" name="slug[Search for elements that interfere with site ranking][price]">
+                          <label class="form-check-label" for="f-check-13">
+                            <div class="lbl-title" data-tkey="x56"></div>
+                            <div class="custom-input-cont" data-lbl="Hours"><input type="number" class="w-custom-input custom-calc-input" name="slug[Search for elements that interfere with site ranking][hours]" value="1"> </div>
+                            <div class="check-summ" data-lbl="Cost">250 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-14" value="150" name="slug[Text optimization audit]">
-                          <label class="form-check-label" data-tkey="x57" for="f-check-14">
+                          <input class="form-check-input" type="checkbox" id="f-check-14" value="150" name="slug[Text optimization audit][price]">
+                          <label class="form-check-label" for="f-check-14">
+                            <div class="lbl-title" data-tkey="x57"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Text optimization audit][hours]" value="1"> </div>
+                            <div class="check-summ">150 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-15" value="300" name="slug[Company Information Audit]">
-                          <label class="form-check-label" data-tkey="x58" for="f-check-15">
+                          <input class="form-check-input" type="checkbox" id="f-check-15" value="300" name="slug[Company Information Audit][price]">
+                          <label class="form-check-label" for="f-check-15">
+                            <div class="lbl-title" data-tkey="x58"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Company Information Audit][hours]" value="1"> </div>
+                            <div class="check-summ">300 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-16" value="300" name="slug[Audit of site link optimization]">
-                          <label class="form-check-label" data-tkey="x59" for="f-check-16">
+                          <input class="form-check-input" type="checkbox" id="f-check-16" value="300" name="slug[Audit of site link optimization][price]">
+                          <label class="form-check-label" for="f-check-16">
+                            <div class="lbl-title" data-tkey="x59"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Audit of site link optimization][hours]" value="1"> </div>
+                            <div class="check-summ">300 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-17" value="320" name="slug[Audit of commercial factors]">
-                          <label class="form-check-label" data-tkey="x60" for="f-check-17">
+                          <input class="form-check-input" type="checkbox" id="f-check-17" value="320" name="slug[Audit of commercial factors][price]">
+                          <label class="form-check-label" for="f-check-17">
+                            <div class="lbl-title" data-tkey="x60"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Audit of commercial factors][hours]" value="1"> </div>
+                            <div class="check-summ">60 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-18" value="200" name="slug[Full analysis of a competing site]">
-                          <label class="form-check-label" data-tkey="x61" for="f-check-18">
+                          <input class="form-check-input" type="checkbox" id="f-check-18" value="200" name="slug[Full analysis of a competing site][price]">
+                          <label class="form-check-label" for="f-check-18">
+                            <div class="lbl-title" data-tkey="x61"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Full analysis of a competing site][hours]" value="1"> </div>
+                            <div class="check-summ">200 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-19" value="200" name="slug[Developing a website promotion strategy]">
-                          <label class="form-check-label" data-tkey="x62" for="f-check-19">
+                          <input class="form-check-input" type="checkbox" id="f-check-19" value="200" name="slug[Developing a website promotion strategy][price]">
+                          <label class="form-check-label" for="f-check-19">
+                            <div class="lbl-title" data-tkey="x62"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Developing a website promotion strategy][hours]" value="1"> </div>
+                            <div class="check-summ">200 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-20" value="20" name="slug[Installation of counters]">
-                          <label class="form-check-label" data-tkey="x63" for="f-check-20">
+                          <input class="form-check-input" type="checkbox" id="f-check-20" value="20" name="slug[Installation of counters][price]">
+                          <label class="form-check-label" for="f-check-20">
+                            <div class="lbl-title" data-tkey="x63"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Installation of counters][hours]" value="1"> </div>
+                            <div class="check-summ">20 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-21" value="0" name="slug[Filling the site with content]">
-                          <label class="form-check-label" data-tkey="x64" for="f-check-21">
+                          <input class="form-check-input" type="checkbox" id="f-check-21" value="0" name="slug[Filling the site with content][price]">
+                          <label class="form-check-label" for="f-check-21">
+                            <div class="lbl-title" data-tkey="x64"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Filling the site with content][hours]" value="1"> </div>
+                            <div class="check-summ">0 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-22" value="200" name="slug[Elimination of negative elements of ranking]">
-                          <label class="form-check-label" data-tkey="x65" for="f-check-22">
+                          <input class="form-check-input" type="checkbox" id="f-check-22" value="200" name="slug[Elimination of negative elements of ranking][price]">
+                          <label class="form-check-label" for="f-check-22">
+                            <div class="lbl-title" data-tkey="x65"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Elimination of negative elements of ranking][hours]" value="1"> </div>
+                            <div class="check-summ">200 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-23" value="110" name="slug[Saturation of the site with selling elements]">
-                          <label class="form-check-label" data-tkey="x66" for="f-check-23">
+                          <input class="form-check-input" type="checkbox" id="f-check-23" value="110" name="slug[Saturation of the site with selling elements][price]">
+                          <label class="form-check-label" for="f-check-23">
+                            <div class="lbl-title" data-tkey="x66"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Saturation of the site with selling elements][hours]" value="1"> </div>
+                            <div class="check-summ">110 EUR</div>
                           </label>
                         </div>
                        <div class="form-check custom-check custom-price-check">
-                          <input class="form-check-input" type="checkbox" id="f-check-24" value="200" name="slug[Website speed optimization]">
-                          <label class="form-check-label" data-tkey="x67" for="f-check-24">
+                          <input class="form-check-input" type="checkbox" id="f-check-24" value="200" name="slug[Website speed optimization][price]">
+                          <label class="form-check-label" for="f-check-24">
+                            <div class="lbl-title" data-tkey="x67"></div>
+                            <div class="custom-input-cont"><input type="number" class="w-custom-input custom-calc-input" name="slug[Website speed optimization][hours]" value="1"> </div>
+                            <div class="check-summ">200 EUR</div>
                           </label>
                         </div>
 
@@ -436,6 +519,231 @@ funnel of sales</div>
                                   <option data-tkey="x72" value="Netherlands"></option>
                                   <option data-tkey="x73" value="Estonia"></option>
                                   <option data-tkey="x74" value="Russia"></option>
+                                  
+                                  <option value="AX">AALAND ISLANDS</option>
+                                  <option value="AF">AFGHANISTAN</option>
+                                  <option value="AL">ALBANIA</option>
+                                  <option value="DZ">ALGERIA</option>
+                                  <option value="AS">AMERICAN SAMOA</option>
+                                  <option value="AD">ANDORRA</option>
+                                  <option value="AO">ANGOLA</option>
+                                  <option value="AI">ANGUILLA</option>
+                                  <option value="AQ">ANTARCTICA</option>
+                                  <option value="AG">ANTIGUA AND BARBUDA</option>
+                                  <option value="AR">ARGENTINA</option>
+                                  <option value="AM">ARMENIA</option>
+                                  <option value="AW">ARUBA</option>
+                                  <option value="AU">AUSTRALIA</option>
+                                  <option value="AT">AUSTRIA</option>
+                                  <option value="AZ">AZERBAIJAN</option>
+                                  <option value="BS">BAHAMAS</option>
+                                  <option value="BH">BAHRAIN</option>
+                                  <option value="BD">BANGLADESH</option>
+                                  <option value="BB">BARBADOS</option>
+                                  <option value="BY">BELARUS</option>
+                                  <option value="BE">BELGIUM</option>
+                                  <option value="BZ">BELIZE</option>
+                                  <option value="BJ">BENIN</option>
+                                  <option value="BM">BERMUDA</option>
+                                  <option value="BT">BHUTAN</option>
+                                  <option value="BO">BOLIVIA</option>
+                                  <option value="BA">BOSNIA AND HERZEGOWINA</option>
+                                  <option value="BW">BOTSWANA</option>
+                                  <option value="BV">BOUVET ISLAND</option>
+                                  <option value="BR">BRAZIL</option>
+                                  <option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+                                  <option value="BN">BRUNEI DARUSSALAM</option>
+                                  <option value="BG">BULGARIA</option>
+                                  <option value="BF">BURKINA FASO</option>
+                                  <option value="BI">BURUNDI</option>
+                                  <option value="KH">CAMBODIA</option>
+                                  <option value="CM">CAMEROON</option>
+                                  <option value="CA">CANADA</option>
+                                  <option value="CV">CAPE VERDE</option>
+                                  <option value="KY">CAYMAN ISLANDS</option>
+                                  <option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+                                  <option value="TD">CHAD</option>
+                                  <option value="CL">CHILE</option>
+                                  <option value="CN">CHINA</option>
+                                  <option value="CX">CHRISTMAS ISLAND</option>
+                                  <option value="CO">COLOMBIA</option>
+                                  <option value="KM">COMOROS</option>
+                                  <option value="CK">COOK ISLANDS</option>
+                                  <option value="CR">COSTA RICA</option>
+                                  <option value="CI">COTE D'IVOIRE</option>
+                                  <option value="CU">CUBA</option>
+                                  <option value="CY">CYPRUS</option>
+                                  <option value="CZ">CZECH REPUBLIC</option>
+                                  <option value="DK">DENMARK</option>
+                                  <option value="DJ">DJIBOUTI</option>
+                                  <option value="DM">DOMINICA</option>
+                                  <option value="DO">DOMINICAN REPUBLIC</option>
+                                  <option value="EC">ECUADOR</option>
+                                  <option value="EG">EGYPT</option>
+                                  <option value="SV">EL SALVADOR</option>
+                                  <option value="GQ">EQUATORIAL GUINEA</option>
+                                  <option value="ER">ERITREA</option>
+                                  <option value="EE">ESTONIA</option>
+                                  <option value="ET">ETHIOPIA</option>
+                                  <option value="FO">FAROE ISLANDS</option>
+                                  <option value="FJ">FIJI</option>
+                                  <option value="FI">FINLAND</option>
+                                  <option value="FR">FRANCE</option>
+                                  <option value="GF">FRENCH GUIANA</option>
+                                  <option value="PF">FRENCH POLYNESIA</option>
+                                  <option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+                                  <option value="GA">GABON</option>
+                                  <option value="GM">GAMBIA</option>
+                                  <option value="GE">GEORGIA</option>
+                                  <option value="DE">GERMANY</option>
+                                  <option value="GH">GHANA</option>
+                                  <option value="GI">GIBRALTAR</option>
+                                  <option value="GR">GREECE</option>
+                                  <option value="GL">GREENLAND</option>
+                                  <option value="GD">GRENADA</option>
+                                  <option value="GP">GUADELOUPE</option>
+                                  <option value="GU">GUAM</option>
+                                  <option value="GT">GUATEMALA</option>
+                                  <option value="GN">GUINEA</option>
+                                  <option value="GW">GUINEA-BISSAU</option>
+                                  <option value="GY">GUYANA</option>
+                                  <option value="HT">HAITI</option>
+                                  <option value="HM">HEARD AND MC DONALD ISLANDS</option>
+                                  <option value="HN">HONDURAS</option>
+                                  <option value="HK">HONG KONG</option>
+                                  <option value="HU">HUNGARY</option>
+                                  <option value="IS">ICELAND</option>
+                                  <option value="IN">INDIA</option>
+                                  <option value="ID">INDONESIA</option>
+                                  <option value="IQ">IRAQ</option>
+                                  <option value="IE">IRELAND</option>
+                                  <option value="IL">ISRAEL</option>
+                                  <option value="IT">ITALY</option>
+                                  <option value="JM">JAMAICA</option>
+                                  <option value="JP">JAPAN</option>
+                                  <option value="JO">JORDAN</option>
+                                  <option value="KZ">KAZAKHSTAN</option>
+                                  <option value="KE">KENYA</option>
+                                  <option value="KI">KIRIBATI</option>
+                                  <option value="KW">KUWAIT</option>
+                                  <option value="KG">KYRGYZSTAN</option>
+                                  <option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+                                  <option value="LV">LATVIA</option>
+                                  <option value="LB">LEBANON</option>
+                                  <option value="LS">LESOTHO</option>
+                                  <option value="LR">LIBERIA</option>
+                                  <option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+                                  <option value="LI">LIECHTENSTEIN</option>
+                                  <option value="LT">LITHUANIA</option>
+                                  <option value="LU">LUXEMBOURG</option>
+                                  <option value="MO">MACAU</option>
+                                  <option value="MG">MADAGASCAR</option>
+                                  <option value="MW">MALAWI</option>
+                                  <option value="MY">MALAYSIA</option>
+                                  <option value="MV">MALDIVES</option>
+                                  <option value="ML">MALI</option>
+                                  <option value="MT">MALTA</option>
+                                  <option value="MH">MARSHALL ISLANDS</option>
+                                  <option value="MQ">MARTINIQUE</option>
+                                  <option value="MR">MAURITANIA</option>
+                                  <option value="MU">MAURITIUS</option>
+                                  <option value="YT">MAYOTTE</option>
+                                  <option value="MX">MEXICO</option>
+                                  <option value="MC">MONACO</option>
+                                  <option value="MN">MONGOLIA</option>
+                                  <option value="MS">MONTSERRAT</option>
+                                  <option value="MA">MOROCCO</option>
+                                  <option value="MZ">MOZAMBIQUE</option>
+                                  <option value="MM">MYANMAR</option>
+                                  <option value="NA">NAMIBIA</option>
+                                  <option value="NR">NAURU</option>
+                                  <option value="NP">NEPAL</option>
+                                  <option value="NL">NETHERLANDS</option>
+                                  <option value="AN">NETHERLANDS ANTILLES</option>
+                                  <option value="NC">NEW CALEDONIA</option>
+                                  <option value="NZ">NEW ZEALAND</option>
+                                  <option value="NI">NICARAGUA</option>
+                                  <option value="NE">NIGER</option>
+                                  <option value="NG">NIGERIA</option>
+                                  <option value="NU">NIUE</option>
+                                  <option value="NF">NORFOLK ISLAND</option>
+                                  <option value="MP">NORTHERN MARIANA ISLANDS</option>
+                                  <option value="NO">NORWAY</option>
+                                  <option value="OM">OMAN</option>
+                                  <option value="PK">PAKISTAN</option>
+                                  <option value="PW">PALAU</option>
+                                  <option value="PA">PANAMA</option>
+                                  <option value="PG">PAPUA NEW GUINEA</option>
+                                  <option value="PY">PARAGUAY</option>
+                                  <option value="PE">PERU</option>
+                                  <option value="PH">PHILIPPINES</option>
+                                  <option value="PN">PITCAIRN</option>
+                                  <option value="PL">POLAND</option>
+                                  <option value="PT">PORTUGAL</option>
+                                  <option value="PR">PUERTO RICO</option>
+                                  <option value="QA">QATAR</option>
+                                  <option value="RE">REUNION</option>
+                                  <option value="RO">ROMANIA</option>
+                                  <option selected value="RU">RUSSIAN FEDERATION</option>
+                                  <option value="RW">RWANDA</option>
+                                  <option value="SH">SAINT HELENA</option>
+                                  <option value="KN">SAINT KITTS AND NEVIS</option>
+                                  <option value="LC">SAINT LUCIA</option>
+                                  <option value="PM">SAINT PIERRE AND MIQUELON</option>
+                                  <option value="VC">SAINT VINCENT AND THE GRENADINES</option>
+                                  <option value="WS">SAMOA</option>
+                                  <option value="SM">SAN MARINO</option>
+                                  <option value="ST">SAO TOME AND PRINCIPE</option>
+                                  <option value="SA">SAUDI ARABIA</option>
+                                  <option value="SN">SENEGAL</option>
+                                  <option value="CS">SERBIA AND MONTENEGRO</option>
+                                  <option value="SC">SEYCHELLES</option>
+                                  <option value="SL">SIERRA LEONE</option>
+                                  <option value="SG">SINGAPORE</option>
+                                  <option value="SK">SLOVAKIA</option>
+                                  <option value="SI">SLOVENIA</option>
+                                  <option value="SB">SOLOMON ISLANDS</option>
+                                  <option value="SO">SOMALIA</option>
+                                  <option value="ZA">SOUTH AFRICA</option>
+                                  <option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+                                  <option value="ES">SPAIN</option>
+                                  <option value="LK">SRI LANKA</option>
+                                  <option value="SD">SUDAN</option>
+                                  <option value="SR">SURINAME</option>
+                                  <option value="SJ">SVALBARD AND JAN MAYEN ISLANDS</option>
+                                  <option value="SZ">SWAZILAND</option>
+                                  <option value="SE">SWEDEN</option>
+                                  <option value="CH">SWITZERLAND</option>
+                                  <option value="SY">SYRIAN ARAB REPUBLIC</option>
+                                  <option value="TW">TAIWAN</option>
+                                  <option value="TJ">TAJIKISTAN</option>
+                                  <option value="TH">THAILAND</option>
+                                  <option value="TL">TIMOR-LESTE</option>
+                                  <option value="TG">TOGO</option>
+                                  <option value="TK">TOKELAU</option>
+                                  <option value="TO">TONGA</option>
+                                  <option value="TT">TRINIDAD AND TOBAGO</option>
+                                  <option value="TN">TUNISIA</option>
+                                  <option value="TR">TURKEY</option>
+                                  <option value="TM">TURKMENISTAN</option>
+                                  <option value="TC">TURKS AND CAICOS ISLANDS</option>
+                                  <option value="TV">TUVALU</option>
+                                  <option value="UG">UGANDA</option>
+                                  <option value="UA">UKRAINE</option>
+                                  <option value="AE">UNITED ARAB EMIRATES</option>
+                                  <option value="GB">UNITED KINGDOM</option>
+                                  <option value="US">UNITED STATES</option>
+                                  <option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
+                                  <option value="UY">URUGUAY</option>
+                                  <option value="UZ">UZBEKISTAN</option>
+                                  <option value="VU">VANUATU</option>
+                                  <option value="VE">VENEZUELA</option>
+                                  <option value="VN">VIET NAM</option>
+                                  <option value="WF">WALLIS AND FUTUNA ISLANDS</option>
+                                  <option value="EH">WESTERN SAHARA</option>
+                                  <option value="YE">YEMEN</option>
+                                  <option value="ZM">ZAMBIA</option>
+                                  <option value="ZW">ZIMBABWE</option>
                                 </select>
                               </div>
                             </div>
@@ -454,6 +762,231 @@ funnel of sales</div>
                               <option data-tkey="x76" value="Netherlands"></option>
                               <option data-tkey="x77" value="Estonia"></option>
                               <option data-tkey="x78" value="Russia"></option>
+                              
+                              <option value="AX">AALAND ISLANDS</option>
+                              <option value="AF">AFGHANISTAN</option>
+                              <option value="AL">ALBANIA</option>
+                              <option value="DZ">ALGERIA</option>
+                              <option value="AS">AMERICAN SAMOA</option>
+                              <option value="AD">ANDORRA</option>
+                              <option value="AO">ANGOLA</option>
+                              <option value="AI">ANGUILLA</option>
+                              <option value="AQ">ANTARCTICA</option>
+                              <option value="AG">ANTIGUA AND BARBUDA</option>
+                              <option value="AR">ARGENTINA</option>
+                              <option value="AM">ARMENIA</option>
+                              <option value="AW">ARUBA</option>
+                              <option value="AU">AUSTRALIA</option>
+                              <option value="AT">AUSTRIA</option>
+                              <option value="AZ">AZERBAIJAN</option>
+                              <option value="BS">BAHAMAS</option>
+                              <option value="BH">BAHRAIN</option>
+                              <option value="BD">BANGLADESH</option>
+                              <option value="BB">BARBADOS</option>
+                              <option value="BY">BELARUS</option>
+                              <option value="BE">BELGIUM</option>
+                              <option value="BZ">BELIZE</option>
+                              <option value="BJ">BENIN</option>
+                              <option value="BM">BERMUDA</option>
+                              <option value="BT">BHUTAN</option>
+                              <option value="BO">BOLIVIA</option>
+                              <option value="BA">BOSNIA AND HERZEGOWINA</option>
+                              <option value="BW">BOTSWANA</option>
+                              <option value="BV">BOUVET ISLAND</option>
+                              <option value="BR">BRAZIL</option>
+                              <option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+                              <option value="BN">BRUNEI DARUSSALAM</option>
+                              <option value="BG">BULGARIA</option>
+                              <option value="BF">BURKINA FASO</option>
+                              <option value="BI">BURUNDI</option>
+                              <option value="KH">CAMBODIA</option>
+                              <option value="CM">CAMEROON</option>
+                              <option value="CA">CANADA</option>
+                              <option value="CV">CAPE VERDE</option>
+                              <option value="KY">CAYMAN ISLANDS</option>
+                              <option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+                              <option value="TD">CHAD</option>
+                              <option value="CL">CHILE</option>
+                              <option value="CN">CHINA</option>
+                              <option value="CX">CHRISTMAS ISLAND</option>
+                              <option value="CO">COLOMBIA</option>
+                              <option value="KM">COMOROS</option>
+                              <option value="CK">COOK ISLANDS</option>
+                              <option value="CR">COSTA RICA</option>
+                              <option value="CI">COTE D'IVOIRE</option>
+                              <option value="CU">CUBA</option>
+                              <option value="CY">CYPRUS</option>
+                              <option value="CZ">CZECH REPUBLIC</option>
+                              <option value="DK">DENMARK</option>
+                              <option value="DJ">DJIBOUTI</option>
+                              <option value="DM">DOMINICA</option>
+                              <option value="DO">DOMINICAN REPUBLIC</option>
+                              <option value="EC">ECUADOR</option>
+                              <option value="EG">EGYPT</option>
+                              <option value="SV">EL SALVADOR</option>
+                              <option value="GQ">EQUATORIAL GUINEA</option>
+                              <option value="ER">ERITREA</option>
+                              <option value="EE">ESTONIA</option>
+                              <option value="ET">ETHIOPIA</option>
+                              <option value="FO">FAROE ISLANDS</option>
+                              <option value="FJ">FIJI</option>
+                              <option value="FI">FINLAND</option>
+                              <option value="FR">FRANCE</option>
+                              <option value="GF">FRENCH GUIANA</option>
+                              <option value="PF">FRENCH POLYNESIA</option>
+                              <option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+                              <option value="GA">GABON</option>
+                              <option value="GM">GAMBIA</option>
+                              <option value="GE">GEORGIA</option>
+                              <option value="DE">GERMANY</option>
+                              <option value="GH">GHANA</option>
+                              <option value="GI">GIBRALTAR</option>
+                              <option value="GR">GREECE</option>
+                              <option value="GL">GREENLAND</option>
+                              <option value="GD">GRENADA</option>
+                              <option value="GP">GUADELOUPE</option>
+                              <option value="GU">GUAM</option>
+                              <option value="GT">GUATEMALA</option>
+                              <option value="GN">GUINEA</option>
+                              <option value="GW">GUINEA-BISSAU</option>
+                              <option value="GY">GUYANA</option>
+                              <option value="HT">HAITI</option>
+                              <option value="HM">HEARD AND MC DONALD ISLANDS</option>
+                              <option value="HN">HONDURAS</option>
+                              <option value="HK">HONG KONG</option>
+                              <option value="HU">HUNGARY</option>
+                              <option value="IS">ICELAND</option>
+                              <option value="IN">INDIA</option>
+                              <option value="ID">INDONESIA</option>
+                              <option value="IQ">IRAQ</option>
+                              <option value="IE">IRELAND</option>
+                              <option value="IL">ISRAEL</option>
+                              <option value="IT">ITALY</option>
+                              <option value="JM">JAMAICA</option>
+                              <option value="JP">JAPAN</option>
+                              <option value="JO">JORDAN</option>
+                              <option value="KZ">KAZAKHSTAN</option>
+                              <option value="KE">KENYA</option>
+                              <option value="KI">KIRIBATI</option>
+                              <option value="KW">KUWAIT</option>
+                              <option value="KG">KYRGYZSTAN</option>
+                              <option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+                              <option value="LV">LATVIA</option>
+                              <option value="LB">LEBANON</option>
+                              <option value="LS">LESOTHO</option>
+                              <option value="LR">LIBERIA</option>
+                              <option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+                              <option value="LI">LIECHTENSTEIN</option>
+                              <option value="LT">LITHUANIA</option>
+                              <option value="LU">LUXEMBOURG</option>
+                              <option value="MO">MACAU</option>
+                              <option value="MG">MADAGASCAR</option>
+                              <option value="MW">MALAWI</option>
+                              <option value="MY">MALAYSIA</option>
+                              <option value="MV">MALDIVES</option>
+                              <option value="ML">MALI</option>
+                              <option value="MT">MALTA</option>
+                              <option value="MH">MARSHALL ISLANDS</option>
+                              <option value="MQ">MARTINIQUE</option>
+                              <option value="MR">MAURITANIA</option>
+                              <option value="MU">MAURITIUS</option>
+                              <option value="YT">MAYOTTE</option>
+                              <option value="MX">MEXICO</option>
+                              <option value="MC">MONACO</option>
+                              <option value="MN">MONGOLIA</option>
+                              <option value="MS">MONTSERRAT</option>
+                              <option value="MA">MOROCCO</option>
+                              <option value="MZ">MOZAMBIQUE</option>
+                              <option value="MM">MYANMAR</option>
+                              <option value="NA">NAMIBIA</option>
+                              <option value="NR">NAURU</option>
+                              <option value="NP">NEPAL</option>
+                              <option value="NL">NETHERLANDS</option>
+                              <option value="AN">NETHERLANDS ANTILLES</option>
+                              <option value="NC">NEW CALEDONIA</option>
+                              <option value="NZ">NEW ZEALAND</option>
+                              <option value="NI">NICARAGUA</option>
+                              <option value="NE">NIGER</option>
+                              <option value="NG">NIGERIA</option>
+                              <option value="NU">NIUE</option>
+                              <option value="NF">NORFOLK ISLAND</option>
+                              <option value="MP">NORTHERN MARIANA ISLANDS</option>
+                              <option value="NO">NORWAY</option>
+                              <option value="OM">OMAN</option>
+                              <option value="PK">PAKISTAN</option>
+                              <option value="PW">PALAU</option>
+                              <option value="PA">PANAMA</option>
+                              <option value="PG">PAPUA NEW GUINEA</option>
+                              <option value="PY">PARAGUAY</option>
+                              <option value="PE">PERU</option>
+                              <option value="PH">PHILIPPINES</option>
+                              <option value="PN">PITCAIRN</option>
+                              <option value="PL">POLAND</option>
+                              <option value="PT">PORTUGAL</option>
+                              <option value="PR">PUERTO RICO</option>
+                              <option value="QA">QATAR</option>
+                              <option value="RE">REUNION</option>
+                              <option value="RO">ROMANIA</option>
+                              <option selected value="RU">RUSSIAN FEDERATION</option>
+                              <option value="RW">RWANDA</option>
+                              <option value="SH">SAINT HELENA</option>
+                              <option value="KN">SAINT KITTS AND NEVIS</option>
+                              <option value="LC">SAINT LUCIA</option>
+                              <option value="PM">SAINT PIERRE AND MIQUELON</option>
+                              <option value="VC">SAINT VINCENT AND THE GRENADINES</option>
+                              <option value="WS">SAMOA</option>
+                              <option value="SM">SAN MARINO</option>
+                              <option value="ST">SAO TOME AND PRINCIPE</option>
+                              <option value="SA">SAUDI ARABIA</option>
+                              <option value="SN">SENEGAL</option>
+                              <option value="CS">SERBIA AND MONTENEGRO</option>
+                              <option value="SC">SEYCHELLES</option>
+                              <option value="SL">SIERRA LEONE</option>
+                              <option value="SG">SINGAPORE</option>
+                              <option value="SK">SLOVAKIA</option>
+                              <option value="SI">SLOVENIA</option>
+                              <option value="SB">SOLOMON ISLANDS</option>
+                              <option value="SO">SOMALIA</option>
+                              <option value="ZA">SOUTH AFRICA</option>
+                              <option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+                              <option value="ES">SPAIN</option>
+                              <option value="LK">SRI LANKA</option>
+                              <option value="SD">SUDAN</option>
+                              <option value="SR">SURINAME</option>
+                              <option value="SJ">SVALBARD AND JAN MAYEN ISLANDS</option>
+                              <option value="SZ">SWAZILAND</option>
+                              <option value="SE">SWEDEN</option>
+                              <option value="CH">SWITZERLAND</option>
+                              <option value="SY">SYRIAN ARAB REPUBLIC</option>
+                              <option value="TW">TAIWAN</option>
+                              <option value="TJ">TAJIKISTAN</option>
+                              <option value="TH">THAILAND</option>
+                              <option value="TL">TIMOR-LESTE</option>
+                              <option value="TG">TOGO</option>
+                              <option value="TK">TOKELAU</option>
+                              <option value="TO">TONGA</option>
+                              <option value="TT">TRINIDAD AND TOBAGO</option>
+                              <option value="TN">TUNISIA</option>
+                              <option value="TR">TURKEY</option>
+                              <option value="TM">TURKMENISTAN</option>
+                              <option value="TC">TURKS AND CAICOS ISLANDS</option>
+                              <option value="TV">TUVALU</option>
+                              <option value="UG">UGANDA</option>
+                              <option value="UA">UKRAINE</option>
+                              <option value="AE">UNITED ARAB EMIRATES</option>
+                              <option value="GB">UNITED KINGDOM</option>
+                              <option value="US">UNITED STATES</option>
+                              <option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
+                              <option value="UY">URUGUAY</option>
+                              <option value="UZ">UZBEKISTAN</option>
+                              <option value="VU">VANUATU</option>
+                              <option value="VE">VENEZUELA</option>
+                              <option value="VN">VIET NAM</option>
+                              <option value="WF">WALLIS AND FUTUNA ISLANDS</option>
+                              <option value="EH">WESTERN SAHARA</option>
+                              <option value="YE">YEMEN</option>
+                              <option value="ZM">ZAMBIA</option>
+                              <option value="ZW">ZIMBABWE</option>
                             </select>
                           </div>
                         </div>
@@ -489,7 +1022,7 @@ funnel of sales</div>
                           <div data-tkey="x81" class="custom-lbl-title"></div>
                         </div>
                         <div class="form-row custom-form-row">
-                          <div class="custom-select-cont custom-price custom-val">
+                          <div class="custom-select-cont custom-price custom-val select-val" data-val="eur">
                             <input type="text" class="w-custom-input" value="1000" name="sum">
                           </div>
                         </div>
@@ -584,7 +1117,7 @@ funnel of sales</div>
       </div>
     </section>
     <section class="map-section">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2412.688527329915!2d24.84436945231915!3d59.43605766560333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ecbe39dd16df%3A0x7b1b76b1d0e880da!2zUHVuYW5lIDU2LCAxMzYxOSBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2sus!4v1597333976104!5m2!1sru!2sus" width="1900" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="google_maps"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.6148301665567!2d24.753522546110716!3d59.43941456156366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293612935f9d5%3A0xf01e036cfb57d213!2zUm9zZW5pIDEzLCAxMDExMSBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2sru!4v1599147618817!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="google_maps"></iframe>
     </section>
   </main>
   <footer role="contentinfo">
@@ -722,30 +1255,30 @@ funnel of sales</div>
           ' <div class="fp-price">1000 евро</div>\n' +
           '<div class="fp-price-text fp-price-text-sm">в месяц</div>\n' +
           '</div>',
-        'x44': '<div class="lbl-title">Создание лендинга</div> <div class="check-summ">От 500 евро</div>',
-        'x45': '<div class="lbl-title">Создание корпоративного сайта</div> <div class="check-summ">От 1500 евро</div>',
-        'x46': '<div class="lbl-title">Создание интернет-магазина</div> <div class="check-summ">От 4500 евро</div>',
-        'x47': '<div class="lbl-title">Создание сайта vcard</div> <div class="check-summ">От 1000 евро</div>',
-        'x48': '<div class="lbl-title">Создание портала или сервиса</div> <div class="check-summ">От 5200 евро</div>',
-        'x49': '<div class="lbl-title">Редизайн сайта</div> <div class="check-summ">От 500 евро</div>',
-        'x50': '<div class="lbl-title">Создание прототипа</div> <div class="check-summ">От 300 евро</div>',
-        'x51': '<div class="lbl-title">Создание логотипа</div> <div class="check-summ">От 120 евро</div>',
-        'x52': '<div class="lbl-title">Создание брендбука</div> <div class="check-summ">От 300 евро</div>',
-        'x53': '<div class="lbl-title">Формирование семантического ядра</div> <div class="check-summ">От 80 евро</div>',
-        'x54': '<div class="lbl-title">Поисковый аудит</div> <div class="check-summ">От 200 евро</div>',
-        'x55': '<div class="lbl-title">Технический аудит</div> <div class="check-summ">От 190 евро</div>',
-        'x56': '<div class="lbl-title">Поиск элементов, которые мешают ранжированию сайта</div> <div class="check-summ">От 250 евро</div>',
-        'x57': '<div class="lbl-title">Аудит оптимизации текста</div> <div class="check-summ">От 150 евро</div>',
-        'x58': '<div class="lbl-title">Информационный аудит компании</div> <div class="check-summ">От 300 евро</div>',
-        'x59': '<div class="lbl-title">Аудит оптимизации ссылок на сайт</div> <div class="check-summ">От 300 евро</div>',
-        'x60': '<div class="lbl-title">Аудит коммерческих факторов</div> <div class="check-summ">От 320 евро</div>',
-        'x61': '<div class="lbl-title">Полный анализ сайта-конкурента</div> <div class="check-summ">От 200 евро</div>',
-        'x62': '<div class="lbl-title">Разработка стратегии продвижения сайта</div> <div class="check-summ">От 200 евро</div>',
-        'x63': '<div class="lbl-title">Установка счетчиков</div> <div class="check-summ">От 20 евро</div>',
-        'x64': '<div class="lbl-title">Наполнение сайта контентом</div> <div class="check-summ">ИНДИВИДУАЛЬНО *</div>',
-        'x65': '<div class="lbl-title">Устранение негативных элементов ранжирования</div> <div class="check-summ">От 200 евро</div>',
-        'x66': '<div class="lbl-title">Насыщенность сайта продающими элементами</div> <div class="check-summ">От 110 евро</div>',
-        'x67': '<div class="lbl-title">Оптимизация скорости сайта</div> <div class="check-summ">От 200 евро</div>',
+        'x44': 'Создание лендинга',
+        'x45': 'Создание корпоративного сайта',
+        'x46': 'Создание интернет-магазина',
+        'x47': 'Создание сайта vcard',
+        'x48': 'Создание портала или сервиса',
+        'x49': 'Редизайн сайта',
+        'x50': 'Создание прототипа',
+        'x51': 'Создание логотипа',
+        'x52': 'Создание брендбука',
+        'x53': 'Формирование семантического ядра',
+        'x54': 'Поисковый аудит',
+        'x55': 'Технический аудит',
+        'x56': 'Поиск элементов, которые мешают ранжированию сайта',
+        'x57': 'Аудит оптимизации текста',
+        'x58': 'Информационный аудит компании',
+        'x59': 'Аудит оптимизации ссылок на сайт',
+        'x60': 'Аудит коммерческих факторов',
+        'x61': 'Полный анализ сайта-конкурента',
+        'x62': 'Разработка стратегии продвижения сайта',
+        'x63': 'Установка счетчиков',
+        'x64': 'Наполнение сайта контентом',
+        'x65': 'Устранение негативных элементов ранжирования',
+        'x66': 'Насыщенность сайта продающими элементами',
+        'x67': 'Оптимизация скорости сайта',
         'x68': '* Рассчитывается индивидуально и зависит от <br> тематики текстов, а также объема.',
         'x69': 'ИМЯ И ФАМИЛИЯ',
         'x70': 'ВАШ НОМЕР ТЕЛЕФОНА',
@@ -764,7 +1297,7 @@ funnel of sales</div>
         'x83': 'Я СОГЛАСЕН С <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ</a> И <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ХРАНЕНИЕМ ДАННЫХ</a>',
         'x84': 'ОПЛАТИТЬ',
         'x85': '<span class="h-under">НАШИ </span> <span class="h-under">КОНТАКТЫ</span>',
-        'x86': 'Punane Tn 56, Lasnamäe linnaosa, <br> Tallinn, Harju maakond, 13619',
+        'x86': 'Harju maakond, Tallinn, Kesklinna linnaosa,<br> Roseni tn 13, 10111',
         'x87': 'All © Copyright Reserved 2018-2020',
         'x88': '<span class="h-under">Политика </span> <span class="h-under">конфиденциальности</span>',
         'x89': '<p>This privacy policy has been compiled to better serve those who are concerned with how their "Personally identifiable information" (PII) is being used online. PI is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>\n' +
@@ -865,30 +1398,30 @@ funnel of sales</div>
           ' <div class="fp-price">€ 1,000</div>\n' +
           '<div class="fp-price-text fp-price-text-sm">per month</div>\n' +
           '</div>',
-        'x44': '<div class="lbl-title">Creating a landing page</div> <div class="check-summ">From 500 euro</div>',
-        'x45': '<div class="lbl-title">Creating a corporate website</div> <div class="check-summ">From 1500 euro</div>',
-        'x46': '<div class="lbl-title">Creating an online store</div> <div class="check-summ">From 4500 euro</div>',
-        'x47': '<div class="lbl-title">Creating a vcard site</div> <div class="check-summ">From 1000 euro</div>',
-        'x48': '<div class="lbl-title">Creating a portal or service</div> <div class="check-summ">From 5200 euro</div>',
-        'x49': '<div class="lbl-title">Website redesign</div> <div class="check-summ">From 500 euro</div>',
-        'x50': '<div class="lbl-title">Creating a prototype</div> <div class="check-summ">From 300 euro</div>',
-        'x51': '<div class="lbl-title">Creating Logo</div> <div class="check-summ">From 120 euro</div>',
-        'x52': '<div class="lbl-title">Creating a Brand book</div> <div class="check-summ">From 300 euro</div>',
-        'x53': '<div class="lbl-title">The formation of the semantic core</div> <div class="check-summ">From 80 euro</div>',
-        'x54': '<div class="lbl-title">Search audit</div> <div class="check-summ">From 200 euro</div>',
-        'x55': '<div class="lbl-title">Technical audit</div> <div class="check-summ">From 190 euro</div>',
-        'x56': '<div class="lbl-title">Search for elements that interfere with site ranking</div> <div class="check-summ">From 250 euro</div>',
-        'x57': '<div class="lbl-title">Text optimization audit</div> <div class="check-summ">From 150 euro</div>',
-        'x58': '<div class="lbl-title">Company Information Audit</div> <div class="check-summ">From 300 euro</div>',
-        'x59': '<div class="lbl-title">Audit of site link optimization</div> <div class="check-summ">From 300 euro</div>',
-        'x60': '<div class="lbl-title">Audit of commercial factors</div> <div class="check-summ">From 320 euro</div>',
-        'x61': '<div class="lbl-title">Full analysis of a competing site</div> <div class="check-summ">From 200 euro</div>',
-        'x62': '<div class="lbl-title">Developing a website promotion strategy</div> <div class="check-summ">From 200 euro</div>',
-        'x63': '<div class="lbl-title">Installation of counters</div> <div class="check-summ">From 20 euro</div>',
-        'x64': '<div class="lbl-title">Filling the site with content</div> <div class="check-summ">Individually *</div>',
-        'x65': '<div class="lbl-title">Elimination of negative elements of ranking</div> <div class="check-summ">From 200 euro</div>',
-        'x66': '<div class="lbl-title">Saturation of the site with selling elements</div> <div class="check-summ">From 110 euro</div>',
-        'x67': '<div class="lbl-title">Website speed optimization</div> <div class="check-summ">From 200 euro</div>',
+        'x44': 'Creating a landing page',
+        'x45': 'Creating a corporate website',
+        'x46': 'Creating an online store',
+        'x47': 'Creating a vcard site',
+        'x48': 'Creating a portal or service',
+        'x49': 'Website redesign',
+        'x50': 'Creating a prototype',
+        'x51': 'Creating Logo',
+        'x52': 'Creating a Brand book',
+        'x53': 'The formation of the semantic core',
+        'x54': 'Search audit',
+        'x55': 'Technical audit',
+        'x56': 'Search for elements that interfere with site ranking',
+        'x57': 'Text optimization audit',
+        'x58': 'Company Information Audit',
+        'x59': 'Audit of site link optimization',
+        'x60': 'Audit of commercial factors',
+        'x61': 'Full analysis of a competing site',
+        'x62': 'Developing a website promotion strategy',
+        'x63': 'Installation of counters',
+        'x64': 'Filling the site with content',
+        'x65': 'Elimination of negative elements of ranking',
+        'x66': 'Saturation of the site with selling elements',
+        'x67': 'Website speed optimization',
         'x68': '* It is calculated individually and depends on the subject <br>of the texts, as well as the volume',
         'x69': 'First and second name',
         'x70': 'your phone number',
@@ -907,7 +1440,7 @@ funnel of sales</div>
         'x83': 'I agree with <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">privacy policy</a> and <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">data storage policy</a>',
         'x84': 'PAY NOW!',
         'x85': '<span class="h-under">CONTACT </span> <span class="h-under">US</span>',
-        'x86': 'Punane Tn 56, Lasnamäe linnaosa, <br> Tallinn, Harju maakond, 13619',
+        'x86': 'Harju maakond, Tallinn, Kesklinna linnaosa,<br> Roseni tn 13, 10111',
         'x87': 'All © Copyright Reserved 2018-2020',
         'x88': '<span class="h-under">Privacy </span> <span class="h-under">policy</span>',
         'x89': '<p>This privacy policy has been compiled to better serve those who are concerned with how their "Personally identifiable information" (PII) is being used online. PI is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>\n' +
@@ -1008,30 +1541,30 @@ funnel of sales</div>
           '<div class="fp-price">1000 euro </div>\n' +
           '<div class="fp-price-text fp-price-text-sm">kuus</div>\n' +
           '</div>',
-        'x44': '<div class="lbl-title">Loo лендинга</div> <div class="check-summ">Alates 500 euro </div>',
-        'x45': '<div class="lbl-title">Loo ettevõtte koduleheküljel</div> <div class="check-summ">Alates 1500 euro</div>',
-        'x46': '<div class="lbl-title">Loo interneti-poe</div> <div class="check-summ">Alates 4500 euro</div>',
-        'x47': '<div class="lbl-title">kodulehe Loomine vcard</div> <div class="check-summ">Alates 1000 euro</div>',
-        'x48': '<div class="lbl-title">portaali Loomine või teenuse</div> <div class="check-summ">Alates 5200 euro</div>',
-        'x49': '<div class="lbl-title">veebileht Ümberkujundamine</div> <div class="check-summ">Alates 500 euro</div>',
-        'x50': '<div class="lbl-title">Loo prototüüp</div> <div class="check-summ">Alates 300 euro</div>',
-        'x51': '<div class="lbl-title">logo Loomine</div> <div class="check-summ">Alates 120 euro</div>',
-        'x52': '<div class="lbl-title">Loo брендбука</div> <div class="check-summ">Alates 300 euro</div>',
-        'x53': '<div class="lbl-title">Moodustamise semantiline kernel</div> <div class="check-summ">Alates 80 euro</div>',
-        'x54': '<div class="lbl-title">Otsingu audit</div> <div class="check-summ">Alates 200 euro</div>',
-        'x55': '<div class="lbl-title">Tehniline audit</div> <div class="check-summ">Alates 190 euro</div>',
-        'x56': '<div class="lbl-title">Otsi üksusi, mis häirivad ранжированию saidil</div> <div class="check-summ">Alates 250 euro</div>',
-        'x57': '<div class="lbl-title">Audit optimeerimine teksti</div> <div class="check-summ">Alates 150 euro</div>',
-        'x58': '<div class="lbl-title">Information ettevõtte auditi</div> <div class="check-summ">Alates 300 euro</div>',
-        'x59': '<div class="lbl-title">Audit optimeerimine lingid saidile</div> <div class="check-summ">Alates 300 euro</div>',
-        'x60': '<div class="lbl-title">Audit kaubik tegureid</div> <div class="check-summ">Alates 320 euro</div>',
-        'x61': '<div class="lbl-title">Täielik analüüs saidi konkurendi</div> <div class="check-summ">Alates 200 euro</div>',
-        'x62': '<div class="lbl-title">Arengu edendamise strateegia saidil</div> <div class="check-summ">Alates 200 euro</div>',
-        'x63': '<div class="lbl-title">Add counters</div> <div class="check-summ">Alates 20 euro</div>',
-        'x64': '<div class="lbl-title">Märksõna saidi sisu</div> <div class="check-summ">INDIVIDUAALSELT *</div>',
-        'x65': '<div class="lbl-title">kaotada negatiivsed elemendid hinne</div> <div class="check-summ">Alates 200 euro</div>',
-        'x66': '<div class="lbl-title">Küllastus saidi müüvad elemendid</div> <div class="check-summ">Alates 110 euro</div>',
-        'x67': '<div class="lbl-title">Optimeerimine saidi kiiruse</div> <div class="check-summ">Alates 200 euro</div>',
+        'x44': 'Loo лендинга',
+        'x45': 'Loo ettevõtte koduleheküljel',
+        'x46': 'Loo interneti-poe',
+        'x47': 'kodulehe Loomine vcard',
+        'x48': 'portaali Loomine või teenuse',
+        'x49': 'veebileht Ümberkujundamine',
+        'x50': 'Loo prototüüp',
+        'x51': 'logo Loomine',
+        'x52': 'Loo брендбука',
+        'x53': 'Moodustamise semantiline kernel',
+        'x54': 'Otsingu audit',
+        'x55': 'Tehniline audit',
+        'x56': 'Otsi üksusi, mis häirivad ранжированию saidil',
+        'x57': 'Audit optimeerimine teksti',
+        'x58': 'Information ettevõtte auditi',
+        'x59': 'Audit optimeerimine lingid saidile',
+        'x60': 'Audit kaubik tegureid',
+        'x61': 'Täielik analüüs saidi konkurendi',
+        'x62': 'Arengu edendamise strateegia saidil',
+        'x63': 'Add counters',
+        'x64': 'Märksõna saidi sisu',
+        'x65': 'kaotada negatiivsed elemendid hinne',
+        'x66': 'Küllastus saidi müüvad elemendid',
+        'x67': 'Optimeerimine saidi kiiruse',
         'x68': '* It is calculated individually and depends on the subject <br>of the texts, as well as the volume',
         'x69': 'EES-JA PEREKONNANIMI ',
         'x70': 'TEIE TELEFONINUMBER ',
@@ -1050,7 +1583,7 @@ funnel of sales</div>
         'x83': 'MA olen teiega NÕUS, <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">PRIVAATSUS</a> Ja <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ANDMETE SÄILITAMINE</a>',
         'x84': 'TASUDA',
         'x85': '<span class="h-under">MEIE</span> <span class="h-under">KONTAKTID</span>',
-        'x86': 'Punane Tn 56, Lasnamäe linnaosa, <br> Tallinn, Harju maakond, 13619',
+        'x86': 'Harju maakond, Tallinn, Kesklinna linnaosa,<br> Roseni tn 13, 10111',
         'x87': 'All © Copyright Reserved 2018-2020',
         'x88': '<span class="h-under">Privacy </span> <span class="h-under">policy</span>',
         'x89': '<p>This privacy policy has been compiled to better serve those who are concerned with how their "Personally identifiable information" (PII) is being used online. PI is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>\n' +

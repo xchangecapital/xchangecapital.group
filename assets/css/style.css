@@ -1993,7 +1993,6 @@ main > section:first-child {
 
 .page-price-block {
   background: #fff;
-  padding: 30px 30px 30px 50px;
   overflow: auto;
 }
 
@@ -2072,6 +2071,225 @@ main > section:first-child {
 }
 
 /* /page price */
+
+
+/* form select val */
+
+.custom-select-cont.custom-val.select-val:after {
+  display: none;
+}
+
+.custom-select-cont.custom-val.select-val[data-val="eur"]:before {
+    content: '€';
+}
+
+.custom-select-cont.custom-val.select-val[data-val="usd"]:before {
+    content: '$';
+}
+
+.custom-select-cont.custom-val.select-val[data-val="rub"]:before {
+    content: '₽';
+}
+
+.custom-select-cont.custom-val.select-val {
+  position: relative;
+}
+
+.custom-select-cont.custom-val.select-val .w-custom-input {
+  padding-right: 15px;
+}
+
+.custom-select-cont.custom-val.select-val .w-custom-select.custom-select.custom-select-val {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  font-size: 24px;
+  padding: 0;
+  background: #fff;
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #2B2A29;
+}
+
+.section-title.section-title-val .custom-select-cont.custom-val.select-val .dropdown-toggle,
+.form-group .w-custom-select.custom-select.custom-select-val .dropdown-toggle {
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  height: 37px;
+  min-height: 37px;
+  max-height: 37px;
+  border: 1px solid #2B2A29 !important;
+  color: #2B2A29;
+  padding-right: 35px;
+  background: #fff url(../img/icon/icon_select.svg) no-repeat 90% center;
+}
+
+.custom-select.w-custom-select.custom-select-val > .dropdown-menu {
+  padding: 0;
+  -webkit-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+  min-height: 83px !important;
+}
+
+.custom-select.w-custom-select.custom-select-val > .dropdown-menu.show[x-placement="bottom-start"] {
+  border: 1px solid #2B2A29 !important;
+  border-top: none !important;
+  margin-top: -3px;
+  padding-top: 2px;
+}
+
+.custom-select.w-custom-select.custom-select-val > .dropdown-menu.show[x-placement="top-start"] {
+  border: 1px solid #2B2A29 !important;
+  border-bottom: none !important;
+  margin-bottom: -3px;
+  padding-bottom: 2px;
+}
+
+.custom-select.w-custom-select.custom-select-val .dropdown-menu .selected.active {
+  display: none;
+}
+
+.custom-select.w-custom-select.custom-select-val .dropdown-menu .dropdown-item {
+  line-height: 30px;
+  font-size: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  min-height: 0;
+  color: #2B2A29;
+  padding: 5px 10px;
+}
+
+.w-custom-select.bootstrap-select.custom-select.show>.dropdown-toggle[aria-expanded="true"], .w-custom-select.bootstrap-select.custom-select.show>.dropdown-toggle:focus {
+  border: 1px solid #2B2A29 !important;
+}
+
+.w-custom-select.custom-select.custom-select-val .dropdown-toggle .filter-option-inner-inner, 
+.w-custom-select.custom-select.custom-select-val .dropdown-toggle .filter-option {
+  line-height: 35px;
+  font-size: 24px;
+  font-weight: bold;
+  min-height: 0;
+  color: #2B2A29;
+  margin-top: -1px;
+}
+
+.custom-select-val .text-muted {
+  display: none;
+}
+
+.section-title.section-title-val h2 {
+  position: relative;
+}
+
+.title-custom-cont {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  line-height: 1.1;
+  -webkit-box-shadow: inset 0 -16px 0 0px #FECF3D;
+  box-shadow: inset 0 -16px 0 0px #FECF3D;
+  padding: 0 5px;
+  margin: 0 -5px;
+}
+
+.title-select-text {
+  font-size: 24px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.section-title.section-title-val .custom-select-cont.custom-val.select-val {
+  display: inline-block;
+  vertical-align: middle;
+  width: 115px;
+}
+
+.section-title.section-title-val .custom-select-cont.custom-val.select-val:before {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .w-custom-select.bootstrap-select.custom-select .btn.dropdown-toggle {
+      background: #fff url(../img/icon/icon_select.svg) no-repeat 95% center;
+  }
+  .section-title.section-title-val .custom-select-cont.custom-val.select-val .dropdown-toggle,
+  .form-group .w-custom-select.custom-select.custom-select-val .dropdown-toggle {
+    background: #fff url(../img/icon/icon_select.svg) no-repeat 90% center;
+  }
+  .custom-select-cont.custom-val.select-val .w-custom-input {
+    padding-right: 115px;
+  }
+  .custom-select-cont.custom-val.select-val .w-custom-select.custom-select.custom-select-val {
+    right: 5px;
+  }
+}
+
+.custom-input-cont {
+  position: relative;
+  max-width: 52px;
+  height: 31px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.custom-calc-input.w-custom-input {
+  max-width: 52px;
+  width: 52px;
+  padding: 3px 5px;
+  text-align: center;
+  height: 31px;
+  font-size: 17px;
+  line-height: 17px;
+  position: relative;
+}
+
+.check-summ {
+  position: relative;
+  max-width: 100px;
+  min-width: 100px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.form-check.custom-check.custom-price-check:first-child .check-summ:before,
+.form-check.custom-check.custom-price-check:first-child .custom-input-cont:before {
+  display: block;
+  content: attr(data-lbl);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: #FECF3D;
+}
+
+.w-custom-select.bootstrap-select .dropdown-menu {
+  width: 100%;
+}
+
+.bootstrap-select.w-custom-select .dropdown-menu .dropdown-item {
+  white-space: normal;
+}
+
+/* /form select val */
 
 @media (min-width: 1240px) {
   .container,
@@ -2227,6 +2445,13 @@ main > section:first-child {
 }
 
 @media screen and (max-width:991px) {
+  .form-check.custom-check.custom-price-check:first-child .check-summ:before, .form-check.custom-check.custom-price-check:first-child .custom-input-cont:before {
+    display: none;
+  }
+  .first-col .form-check.custom-check.custom-price-check:first-child .check-summ:before, 
+  .first-col .form-check.custom-check.custom-price-check:first-child .custom-input-cont:before {
+    display: block;
+  }
   .back-link:active, 
   .back-link:hover, 
   .back-link:visited, 
@@ -2305,6 +2530,53 @@ main > section:first-child {
 }
 
 @media screen and (max-width:767px) {
+  .custom-input-cont {
+    margin-right: 4px;
+  }
+  .custom-calc-input.w-custom-input {
+    max-width: 45px;
+    width: 45px;
+    font-size: 14px;
+  }
+  .custom-check.custom-price-check .form-check-label {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .w-custom-select.custom-select.custom-select-val .dropdown-toggle .filter-option-inner-inner, .w-custom-select.custom-select.custom-select-val .dropdown-toggle .filter-option {
+    line-height: 32px;
+    font-size: 20px;
+    text-align: left;
+  }
+  .section-title.section-title-val .custom-select-cont.custom-val.select-val .dropdown-toggle, .form-group .w-custom-select.custom-select.custom-select-val .dropdown-toggle {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 32px;
+    min-height: 32px;
+    max-height: 32px;
+  }
+  .section-title.section-title-val .custom-select-cont.custom-val.select-val .dropdown-toggle, .form-group .w-custom-select.custom-select.custom-select-val .dropdown-toggle {
+    background: #fff url(../img/icon/icon_select.svg) no-repeat 90% center;
+    background-size: 15px 8px;
+  }
+  .custom-select.w-custom-select.custom-select-val .dropdown-menu .dropdown-item {
+    line-height: 22px;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .custom-select.w-custom-select.custom-select-val > .dropdown-menu {
+    min-height: 64px !important;
+  }
+  
+  .first-col {
+    padding-top: 20px;
+  }
+  .title-custom-cont {
+    padding-top: 10px;
+    display: block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
   .form-foot {
     padding-top: 20px;
   }
@@ -2592,7 +2864,8 @@ main > section:first-child {
     top: 8px;
   }
   .check-summ {
-    min-width: 115px;
+    min-height: 31px;
+    min-width: 85px;
     padding: 0 10px;
   }
   .check-cont-foot {
