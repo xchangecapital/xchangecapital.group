@@ -143,6 +143,13 @@ $(function () {
 
   if($('#submit-1').length){
     $('#submit-1').on('click', function(){
+
+      $('.custom-price-check .form-check-input').each(function(){
+        if(!$(this).prop('checked')){
+          $(this).next().find('.custom-calc-input').prop('disabled', true)
+        }
+      })
+
       if($('[data-tab="content-tab-1"]').hasClass('active')){
         $('[name="sum2"]').val('-1');
       }else{
