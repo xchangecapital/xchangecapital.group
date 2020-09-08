@@ -440,11 +440,11 @@
                         </label>
                       </div>
                       <div class="form-check custom-check custom-price-check">
-                        <input class="form-check-input" type="checkbox" id="f-check-21" value="0" name="slug[Filling the site with content][price]">
+                        <input class="form-check-input" type="checkbox" id="f-check-21" value="200" name="slug[Filling the site with content][price]">
                         <label class="form-check-label" for="f-check-21">
                           <div class="lbl-title" data-tkey="x64"></div>
                           <div class="custom-input-cont"><input type="number" min="1" class="w-custom-input custom-calc-input" name="slug[Filling the site with content][hours]" value="1"> </div>
-                          <div class="check-summ">0 EUR</div>
+                          <div class="check-summ">200 EUR</div>
                         </label>
                       </div>
                       <div class="form-check custom-check custom-price-check">
@@ -489,7 +489,7 @@
                     </div>
                     <div class="form-row custom-form-row">
                       <div class="custom-select-cont">
-                        <input type="text" class="w-custom-input" value="" name="name" required>
+                        <input type="text" class="w-custom-input input-data" value="" name="name" required>
                       </div>
                     </div>
                   </div>
@@ -503,7 +503,7 @@
                         </div>
                         <div class="form-row custom-form-row">
                           <div class="custom-select-cont">
-                            <input type="text" class="w-custom-input" value="" name="phone" required>
+                            <input type="text" class="w-custom-input input-data" value="" name="phone" required>
                           </div>
                         </div>
                       </div>
@@ -999,7 +999,7 @@
                     </div>
                     <div class="form-row custom-form-row">
                       <div class="custom-select-cont">
-                        <input type="email" class="w-custom-input" value="" name="email" required>
+                        <input type="email" class="w-custom-input input-data" value="" name="email" required>
                       </div>
                     </div>
                   </div>
@@ -1011,7 +1011,7 @@
                     </div>
                     <div class="form-row custom-form-row">
                       <div class="custom-select-cont">
-                        <input type="text" class="w-custom-input" value="" name="description" required>
+                        <input type="text" class="w-custom-input input-data" value="" name="description" required>
                       </div>
                     </div>
                   </div>
@@ -1152,16 +1152,30 @@
 </footer>
 
 <div class="popup pop-lg" id="pop-msg-2" style="display: none">
-  <div class="pop-wrap">
-    <div class="pop-head">
-      <div class="section-title title-center">
-        <h2 data-tkey="x88">
-        </h2>
-      </div>
+    <div class="pop-wrap">
+        <div class="pop-head">
+            <div class="section-title title-center">
+                <h2 data-tkey="x88">
+                </h2>
+            </div>
+        </div>
+        <div class="pop-main pop-main-text pt-1" data-tkey="x89">
+        </div>
     </div>
-    <div class="pop-main pop-main-text pt-1" data-tkey="x89">
+</div>
+
+
+<div class="popup pop-lg" id="pop-msg-3" style="display: none">
+    <div class="pop-wrap">
+        <div class="pop-head">
+            <div class="section-title title-center">
+                <h2 data-tkey="x90">
+                </h2>
+            </div>
+        </div>
+        <div class="pop-main pop-main-text pt-1" data-tkey="x91">
+        </div>
     </div>
-  </div>
 </div>
 
 
@@ -1294,7 +1308,7 @@
       'x80': 'ОПИСАНИЕ К ПЛАТЕЖУ',
       'x81': 'СУММА К ОПЛАТЕ',
       'x82': 'РАСЧЕТНАЯ СУММА',
-      'x83': 'Я СОГЛАСЕН С <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ</a> И <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ХРАНЕНИЕМ ДАННЫХ</a>',
+      'x83': 'Нажимая на кнопку «ОПЛАТИТЬ», я даю <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">согласие на обработку персональных данных</a> и соглашаюсь с <a href="javascript:;" data-fancybox data-src="#pop-msg-3" class="link">правилами и условиями</a>',
       'x84': 'ОПЛАТИТЬ',
       'x85': '<span class="h-under">НАШИ </span> <span class="h-under">КОНТАКТЫ</span>',
       'x86': 'Harju maakond, Tallinn, Kesklinna linnaosa,<br> Roseni tn 13, 10111',
@@ -1437,7 +1451,7 @@
       'x80': 'DESCRIPTION for pay',
       'x81': 'sum to pay',
       'x82': 'CALCULATED SUM',
-      'x83': 'I agree with <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">privacy policy</a> and <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">data storage policy</a>',
+      'x83': 'BY CLICKING THE "PAY" BUTTON, I GIVE <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link"> CONSENT ON PERSONAL DATA PROCESSING</a> AND I AGREE <a href="javascript:;" data-fancybox data-src="#pop-msg-3" class="link">TO THE TERMS AND CONDITIONS</a>',
       'x84': 'PAY NOW!',
       'x85': '<span class="h-under">CONTACT </span> <span class="h-under">US</span>',
       'x86': 'Harju maakond, Tallinn, Kesklinna linnaosa,<br> Roseni tn 13, 10111',
@@ -1580,7 +1594,7 @@
       'x80': 'MAKSE KIRJELDUS',
       'x81': 'SUMMA TASUMIST',
       'x82': 'ARVUTATUD SUMMA',
-      'x83': 'MA olen teiega NÕUS, <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">PRIVAATSUS</a> Ja <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link">ANDMETE SÄILITAMINE</a>',
+      'x83': 'BY CLICKING THE "PAY" BUTTON, I GIVE <a href="javascript:;" data-fancybox data-src="#pop-msg-2" class="link"> CONSENT ON PERSONAL DATA PROCESSING</a> AND I AGREE <a href="javascript:;" data-fancybox data-src="#pop-msg-3" class="link">TO THE TERMS AND CONDITIONS</a>',
       'x84': 'TASUDA',
       'x85': '<span class="h-under">MEIE</span> <span class="h-under">KONTAKTID</span>',
       'x86': 'Harju maakond, Tallinn, Kesklinna linnaosa,<br> Roseni tn 13, 10111',
@@ -1622,19 +1636,36 @@
     $('[data-tkey]').each(function(){
       $(this).html( dict[ lang ][ $(this).data('tkey') ] );
     });
-
+	
+    let nodeItems = document.getElementsByClassName('input-data');
+    
     switch (lang) {
       case 'ru':
         $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_ru.svg" alt=""></span>Русский</div>');
-        document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2412.688527329915!2d24.84436945231915!3d59.43605766560333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ecbe39dd16df%3A0x7b1b76b1d0e880da!2zUHVuYW5lIDU2LCAxMzYxOSBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2sus!4v1597333976104!5m2!1sru!2sus";
+        document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.61023001224!2d24.752877916076763!3d59.43957498169762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293612935f9d5%3A0xf01e036cfb57d213!2zUm9zZW5pIDEzLCAxMDExMSBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2snl!4v1599235437986!5m2!1sru!2snl";
+        for (let i = 0; i < nodeItems.length; i++) {
+                    console.log(nodeItems[i].hasAttribute('oninvalid'));
+                    if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
+                    nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Пожалуйста, заполните поле!')");
+                }
         break
       case 'en':
         $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_eng.svg" alt=""></span>English</div>');
-        document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4057.6343126252696!2d24.847003!3d59.436124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ecbe39dd16df%3A0x7b1b76b1d0e880da!2sPunane%2056%2C%2013619%20Tallinn%2C%20Estonia!5e0!3m2!1sen!2snl!4v1598371555643!5m2!1sen!2snl";
+        document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.61023001224!2d24.752877916076763!3d59.43957498169762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293612935f9d5%3A0xf01e036cfb57d213!2sRoseni%2013%2C%2010111%20Tallinn%2C%20Estonia!5e0!3m2!1sen!2snl!4v1599235392713!5m2!1sen!2snl";
+        for (let i = 0; i < nodeItems.length; i++) {
+                    console.log(nodeItems[i].hasAttribute('oninvalid'));
+                    if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
+                    nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Fill in the field!')");
+                }
         break
       case 'es':
         $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_est.svg" alt=""></span>Eesti</div>');
-        document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4057.6343126252696!2d24.847003!3d59.436124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ecbe39dd16df%3A0x7b1b76b1d0e880da!2sPunane%2056%2C%2013619%20Tallinn%2C%20Eesti!5e0!3m2!1set!2snl!4v1598371464961!5m2!1set!2snl";
+        document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.6100664627913!2d24.752877916158027!3d59.43957770921997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293612935f9d5%3A0xf01e036cfb57d213!2sRoseni%2013%2C%2010111%20Tallinn%2C%20Eesti!5e0!3m2!1set!2snl!4v1599235264229!5m2!1set!2snl";
+        for (let i = 0; i < nodeItems.length; i++) {
+                    console.log(nodeItems[i].hasAttribute('oninvalid'));
+                    if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
+                    nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Täitke väli!')");
+                } 
         break
     }
   };
@@ -1642,7 +1673,8 @@
   html5Translate(dict, 'en')
 
 </script>
-
+<script type="text/javascript" id="cookiebanner"
+        src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"></script>
 </body>
 
 </html>
