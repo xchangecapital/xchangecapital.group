@@ -1713,35 +1713,35 @@
       $(this).html( dict[ lang ][ $(this).data('tkey') ] );
     });
 	
-    let nodeItems = document.getElementsByClassName('input-data');
+    //let nodeItems = document.getElementsByClassName('input-data');
     
     switch (lang) {
       case 'ru':
         $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_ru.svg" alt=""></span>Русский</div>');
         document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.61023001224!2d24.752877916076763!3d59.43957498169762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293612935f9d5%3A0xf01e036cfb57d213!2zUm9zZW5pIDEzLCAxMDExMSBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2snl!4v1599235437986!5m2!1sru!2snl";
-        for (let i = 0; i < nodeItems.length; i++) {
-                    console.log(nodeItems[i].hasAttribute('oninvalid'));
-                    if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
-                    nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Пожалуйста, заполните поле!')");
-                }
+        // for (let i = 0; i < nodeItems.length; i++) {
+                //     console.log(nodeItems[i].hasAttribute('oninvalid'));
+                //     if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
+                //     nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Пожалуйста, заполните поле!')");
+                // }
         break
       case 'en':
         $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_eng.svg" alt=""></span>English</div>');
         document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.61023001224!2d24.752877916076763!3d59.43957498169762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293612935f9d5%3A0xf01e036cfb57d213!2sRoseni%2013%2C%2010111%20Tallinn%2C%20Estonia!5e0!3m2!1sen!2snl!4v1599235392713!5m2!1sen!2snl";
-        for (let i = 0; i < nodeItems.length; i++) {
-                    console.log(nodeItems[i].hasAttribute('oninvalid'));
-                    if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
-                    nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Fill in the field!')");
-                }
+         // for (let i = 0; i < nodeItems.length; i++) {
+                //     console.log(nodeItems[i].hasAttribute('oninvalid'));
+                //     if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
+                //     nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Fill in the field!')");
+                // }
         break
       case 'es':
         $("#slang").html('<span class="lng-icon"><img src="assets/img/icon/icon_lng_est.svg" alt=""></span>Eesti</div>');
         document.getElementById('google_maps').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.6100664627913!2d24.752877916158027!3d59.43957770921997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293612935f9d5%3A0xf01e036cfb57d213!2sRoseni%2013%2C%2010111%20Tallinn%2C%20Eesti!5e0!3m2!1set!2snl!4v1599235264229!5m2!1set!2snl";
-        for (let i = 0; i < nodeItems.length; i++) {
-                    console.log(nodeItems[i].hasAttribute('oninvalid'));
-                    if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
-                    nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Täitke väli!')");
-                } 
+        // for (let i = 0; i < nodeItems.length; i++) {
+                //     console.log(nodeItems[i].hasAttribute('oninvalid'));
+                //     if (nodeItems[i].hasAttribute('oninvalid') == true) {nodeItems[i].removeAttribute('oninvalid');}
+                //     nodeItems[i].setAttribute('oninvalid', "this.setCustomValidity('Täitke väli!')");
+                // }
         break
     }
   };
