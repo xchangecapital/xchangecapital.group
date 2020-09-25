@@ -1122,11 +1122,6 @@ h1 {
           flex-direction: row;
 }
 
-.custom-check-cont {
-  width: 100%;
-  max-width: 60%;
-}
-
 .form-footer-row .form-check-label {
   font-size: 19px;
   line-height: 1.4;
@@ -1173,9 +1168,8 @@ h1 {
 }
 
 .custom-btn-cont {
-  width: 100%;
-  max-width: 40%;
   padding-left: 10px;
+  min-width: 210px;
 }
 
 main {
